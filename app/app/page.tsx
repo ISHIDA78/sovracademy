@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Banner from '@/components/Banner'
 import DynamicLesson from '@/components/DynamicLesson'
-import { CUR, unlocked, rank, type Cursus } from '@/lib/curriculum'
+import { CUR, unlocked, rank } from '@/lib/curriculum'
 
 /* ─── types ─── */
 interface Item { id: number; node: React.ReactNode }
@@ -75,8 +75,8 @@ export default function AppPage() {
   const [items, setItems] = useState<Item[]>([])
   const [cmdInput, setCmdInput] = useState('')
   const [cmdHistory, setCmdHistory] = useState<string[]>([])
-  const [histIdx, setHistIdx] = useState(-1)
-  const [initPhase, setInitPhase] = useState(true)
+  const [, setHistIdx] = useState(-1)
+  const [, setInitPhase] = useState(true)
   const [bannerReady, setBannerReady] = useState(false)
   const [showPrompt, setShowPrompt] = useState(false)
   const [completions, setCompletions] = useState<string[]>([])

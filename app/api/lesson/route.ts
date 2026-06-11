@@ -52,7 +52,7 @@ export async function GET(req: Request) {
   }
 
   // Stream from Ollama, accumulate, parse and cache
-  const done = c.lessons.filter(l2 => false).length // will be computed per-user in future
+  const done = 0 // will be computed per-user in future
   const prompt = buildConceptPrompt(c, l, xp, done, c.lessons.length)
 
   const encoder = new TextEncoder()
@@ -98,7 +98,7 @@ export async function GET(req: Request) {
 
         // Send a final special marker with the parsed struct so client doesn't need to re-parse
         controller.enqueue(encoder.encode(`\n\x00PARSED:${JSON.stringify(parsed)}`))
-      } catch (err) {
+      } catch {
         const fb = fallbackLesson(c, l)
         setCachedLesson(key, fb)
         controller.enqueue(encoder.encode(`\n\x00PARSED:${JSON.stringify(fb)}`))
