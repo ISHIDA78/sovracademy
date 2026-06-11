@@ -1,0 +1,17 @@
+{
+  "concept": [
+    "Qu'est-ce que Fish shell ?",
+    "Un shell de ligne de commande flexible et personnalisable.",
+    "Pourquoi ça existe ?",
+    "Résoudre le problème des shells traditionnels trop complexes et restrictifs.",
+    "Comment ça fonctionne en interne ?",
+    "Intégrant les commandes shells à partir de la même interface utilisateur.",
+    "Ce qu'il faut absolument savoir en pratique ?",
+    "Utiliser les commandes Fish pour automatiser les tâches daily.",
+    "Subtilités : Les commandes Fish sont stockées dans un fichier nommé fish.conf, ce qui peut être utilisé pour stocker des commandes personnelles et répétitives.",
+    "Pièges : L'utilisation incorrecte de la commande 'source' pour charger une nouvelle session de shell.",
+    "Cas avancés : Utiliser la commande 'pushd' pour échanger la directory actuelle avec une autre."
+  ],
+  "code": "# Créer un nouveau fichier nommé fish.config\nmkdir -p ~/.config/fish\n\n# Configurer le shell Fish pour utiliser la variable 'PATH'\nset default_path /opt/bin:/usr/local/bin\n\n# Afficher les commandes Fish par défaut dans la session de shell\necho \"fish\"\n\n# Changer le repertoire actuel avec la commande pushd\npushd ~/Documents\n\n# Créer un nouveau fichier nommé script.fish pour stocker des commandes personnelles\necho 'echo \"Bonjour, mon ami!\"' >> ~/.config/fish/script.fish\n\n# Charger la session de shell avec les commandes Fish personnalisées\nsource ~/.config/fish/fish.config\n\n# Exécuter la commande personnalisation 'script.fish'\n. ~/.config/fish/script.fish",
+  "situation": ""
+}

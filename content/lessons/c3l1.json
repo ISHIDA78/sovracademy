@@ -1,0 +1,13 @@
+{
+  "concept": [
+    "Qu'est-ce que l'algorithme Asymétrique RSA ?",
+    "Qu'est-ce que c'est ? L'algorithme RSA est une méthode de chiffrement asymétrique utilisée pour protéger les communications sécurisées.",
+    "Pourquoi ça existe, quel problème ça résout ? Il permet de chiffrer des messages sans divulguer la clé secrète, assurant ainsi la confidentialité.",
+    "Comment ça fonctionne en interne (mécanisme concret) ?",
+    "L'algorithme RSA utilise deux clés : une clé publique et une clé privée. La clé publique est utilisée pour chiffrer les messages, tandis que la clé privée est utilisée pour déchiffrer les messages.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "La sécurité de l'algorithme RSA repose sur le difficile calcul du factoriel premier et sur la difficulté du carré-pompeur."
+  ],
+  "code": "# Fonction pour calculer le factoriel de deux nombres premiers\nfacteur() {\n  local a=$1\n  local b=$2\n  for ((i=a; i<b; i++)); do\n    fact=$(echo \"$a * $b\" | bc)\n    if [ $((fact % (i+1))) -eq 0 ]; then\n      echo \"Factoriel de $i est $fact\"\n      return\n    fi\n  done\n}\n\n# Fonction pour chiffrer un message avec RSA\nRSA_encrypt() {\n  local m=$1\n  local e=$2\n  local n=$3\n  local c=$(echo \"e ^ $m\" | bc -l)\n  echo \"$c\"\n}\n\n# Fonction pour déchiffrer un message avec RSA\nRSA_decrypt() {\n  local c=$1\n  local d=$2\n  local n=$3\n  local m=$(echo \"d ^ $c\" | bc -l)\n  echo \"$m\"\n}",
+  "situation": "Un client souhaite envoyer une commande financière à un serveur, mais il souhaite protéger la transaction en utilisant un algorithme de chiffrement asymétrique. Il utilise l'algorithme RSA pour chiffrer le message et envoyer le certificat public au serveur. Le serveur utilise ensuite la clé privée pour déchiffrer le message et traiter la transaction sécurisément."
+}

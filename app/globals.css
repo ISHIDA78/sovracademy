@@ -2,26 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: #000;
+  color: #c8c8c8;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.35;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ANSI colours */
+.c-red { color: #ff5555; }
+.c-grn { color: #5af78e; }
+.c-yel { color: #f1fa8c; }
+.c-blu { color: #8be9fd; }
+.c-mag { color: #ff79c6; }
+.c-cyn { color: #8be9fd; }
+.c-wht { color: #ffffff; }
+.c-dim { color: #555; }
+.c-org { color: #ffb86c; }
+.c-gry { color: #777; }
+
+/* Boot screen */
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  padding: 4px 8px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #000;
+}
+.boot-screen::-webkit-scrollbar { width: 3px; }
+.boot-screen::-webkit-scrollbar-thumb { background: #222; }
+
+.k-ts { color: #2e2e2e; }
+.k-ok { color: #2a8a2a; }
+.k-b  { color: #eee; font-weight: 700; }
+
+#secret { color: #2e2e2e; text-decoration: none; cursor: text; }
+#secret:hover { color: #fff; text-decoration: underline; cursor: pointer; }
+
+/* TTY login */
+.tty-screen {
+  position: fixed;
+  inset: 0;
+  padding: 4px 8px;
+  background: #000;
+  overflow-y: auto;
+}
+.irow { display: flex; align-items: center; }
+.ilbl { white-space: pre; color: #c8c8c8; }
+.iinp {
+  background: transparent; border: none; outline: none;
+  color: #c8c8c8; caret-color: #c8c8c8;
+  font-family: inherit; font-size: 13px; flex: 1; min-width: 0;
+}
+.iinp.mask { color: #000 !important; caret-color: #c8c8c8 !important; }
+
+/* App shell */
+.app-shell {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+.app-banner {
+  flex-shrink: 0;
+  padding: 6px 8px 4px;
+  border-bottom: 1px solid #1c1c1c;
+  white-space: pre;
+  overflow: hidden;
+  background: #000;
+}
+.app-output {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 4px 8px;
+}
+.app-output::-webkit-scrollbar { width: 3px; }
+.app-output::-webkit-scrollbar-thumb { background: #222; }
+
+.app-prompt {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border-top: 1px solid #1c1c1c;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+.cmd-input {
+  background: transparent; border: none; outline: none;
+  color: #fff; caret-color: #5af78e;
+  font-family: inherit; font-size: 13px; flex: 1; min-width: 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Lines */
+.ln { display: block; white-space: pre-wrap; word-break: break-word; }
+.ln.pre { white-space: pre; }
+
+/* Box drawing */
+.box { color: #44475a; }
+
+/* QCM */
+.opt {
+  cursor: pointer;
+  color: #777;
+  padding-left: 6px;
+  display: block;
+  white-space: pre;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+}
+.opt:hover { color: #fff; }
+.opt.done { pointer-events: none; }
+
+/* FreeInput textarea */
+.fi-wrap textarea {
+  background: transparent; border: none; outline: none;
+  color: #fff; caret-color: #5af78e;
+  font-family: inherit; font-size: 13px;
+  resize: none; min-height: 18px;
+  width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Cursor blink */
+.cur {
+  display: inline-block; width: 7px; height: 13px;
+  background: #5af78e; vertical-align: middle;
+  animation: bl 1s step-end infinite;
 }
+@keyframes bl { 50% { opacity: 0; } }
+
+/* Boot sign-in form */
+.boot-signin {
+  margin-top: 12px;
+  border: 1px solid #222;
+  padding: 8px 12px;
+  display: inline-block;
+  min-width: 340px;
+}
+.boot-signin-field {
+  display: flex; align-items: center; gap: 8px; margin: 3px 0;
+}
+.boot-signin-field input {
+  background: transparent; border: none; border-bottom: 1px solid #333;
+  outline: none; color: #c8c8c8; caret-color: #5af78e;
+  font-family: inherit; font-size: 13px; min-width: 200px;
+}
+.boot-signin-btn {
+  display: inline-block; margin-top: 8px; padding: 2px 12px;
+  border: 1px solid #5af78e; color: #5af78e; cursor: pointer;
+  background: transparent; font-family: inherit; font-size: 13px;
+}
+.boot-signin-btn:hover { background: #5af78e; color: #000; }
+.boot-error { color: #ff5555; font-size: 12px; margin-top: 4px; display: block; }

@@ -1,0 +1,18 @@
+{
+  "concept": [
+    "Qu'est-ce que la PKI ?",
+    "Pourquoi ça existe ?",
+    "Comment ça fonctionne en interne ?",
+    "PKI, ou Certified Public Key Infrastructure, est une architecture pour gérer les clés publiques et certificats numériques. Elle permet aux utilisateurs de sécuriser leurs communications en ligne.",
+    "Ce qu'il faut absolument savoir en pratique :",
+    "Utiliser des autorités de certification (CA) pour obtenir des certificats valides",
+    "Gérer les fichiers de revocation (CRL) et d'authentification (OCSP)",
+    "Utiliser les clés publiques pour établir des cryptosystèmes sécurisés",
+    "SUBTILÉS :",
+    "Les attaques contre la PKI, telles que le man-in-the-middle",
+    "La gestion des certificats expirés ou invalidés",
+    "L'utilisation de l'authentification à deux facteurs (2FA) pour renforcer la sécurité"
+  ],
+  "code": "",
+  "situation": ""
+}

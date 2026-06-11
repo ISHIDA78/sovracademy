@@ -1,0 +1,18 @@
+{
+  "concept": [
+    "Qu'est-ce que le noyau (Kernel) ?",
+    "Il est l'application centrale d'un système d'exploitation, responsable de la gestion des ressources et des processus.",
+    "Pourquoi ça existe ?",
+    "Résoudre les problèmes de base tels que la gestion des mémoire, des fichiers et des entrées/sorties.",
+    "Comment ça fonctionne en interne ?",
+    "Il gère les appels d'API, les processus et les threads, tout en garantissant l'accès aux ressources du système.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Comprendre la structure du code source, les réseaux de fichiers et les gestionnaires de mémoire.",
+    "Subtilités, pièges :",
+    "- Les attaques de segmentation (buffer overflow)",
+    "- La gestion des exceptions de type FPU",
+    "- L'utilisation correcte des routines d'appel système"
+  ],
+  "code": "# Créer un nouveau programme C\ngcc -o kernel_test kernel.c -lkernel\n\n# Désactiver la sécurité du noyau\necho \"1\" > /proc/sys/kernel/smpboot=0\n\n# Réinitialiser le stockage de fichiers\nrm -rf /root/stockage_fichiers\n\n# Créer un nouveau processus\nmkfifo /root/fichier_fifo\n./kernel_test &\n\n# Tester la gestion des fichiers\necho \"Hello, monde !\" > /dev/fd0\n\n# Vérifier l'activation des services de réseau\nnetstat -an | grep listen",
+  "situation": "Un système d'exploitation est en train de démarrer sur un ordinateur virtuel. Le système doit gérer les entrées/sorties, tels que les fichiers et les applications, tout en garantissant l'accès aux ressources du système."
+}

@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que le système de fichiers est en Linux, et quel problème résout-il ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Résolve les problèmes de stockage",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Gère les droits d'accès des utilisateurs",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Stocke et organise les fichiers du système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Assure la sécurité des données en stockage",
+      "correct": false
+    }
+  ],
+  "explanation": "Gère les droits d'accès des utilisateurs pour protéger les fichiers du système."
+}

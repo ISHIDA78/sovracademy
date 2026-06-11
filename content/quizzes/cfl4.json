@@ -1,0 +1,25 @@
+{
+  "question": "Qu'est-ce qu'un shell ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Un environnement graphique",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Un logiciel d'éditeur de fichiers",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Un système interactif de commandes",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Un programme de débogage"
+    }
+  ],
+  "explanation": "Un shell est un environnement interactiv pour saisir et exécuter des commandes."
+}

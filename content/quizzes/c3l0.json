@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le nombre de bits utilisés dans l'algorithme AES pour la clé de chiffrement ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "128 bits",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "192 bits",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "256 bits",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "512 bits",
+      "correct": false
+    }
+  ],
+  "explanation": "La clé AES est généralement de 128, 192 ou 256 bits pour une sécurité optimale."
+}

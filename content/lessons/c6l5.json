@@ -1,0 +1,13 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ? Un chain de redirections (ROP) est une technique utilisée pour exploiter les erreurs de formatage des instructions x86. Cela permet de relier des offsets de pointeurs dans la zone de données d'un processus.",
+    "Pourquoi ça existe, quel problème ça résout ? ROP s'appuie sur les erreurs de formatage des instructions x86 pour relier des offsets de pointeurs. Cela permet aux attaquants de créer une chaîne d'instructions valides sans connaître l'adresses exacte de la fonction ciblée.",
+    "Comment ça fonctionne en interne ? Un chain de redirections implique que plusieurs informations sont stockées dans la zone de données d'un processus. Lorsqu'une erreur de formatage se produit, les informations sont malformées, créant des liens entre les offsets de pointeurs. Cela permet aux attaquants de relier des instructions x86 et de créer une chaîne valide.",
+    "Ce qu'il faut absolument savoir en pratique ? Pour utiliser ROP, il faut connaître les offsets de pointeur dans la zone de données d'un processus et comprendre comment les lier pour créer une chaîne d'instructions valides.",
+    "Subtilités, pièges, cas avancés :",
+    "- L'exploit ROP nécessite que l'attaque utilise des instructions x86 qui sont proches du pointeur cible.",
+    "- Le chain de redirections peut être empêché en utilisant des mécanismes de protection d'espace de données pour les offsets de pointeur."
+  ],
+  "code": "",
+  "situation": ""
+}

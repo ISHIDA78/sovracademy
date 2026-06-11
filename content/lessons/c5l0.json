@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ? Un pointeur est une référence mémoire qui contient l'adresse d'une variable ou d'un bloc de mémoire.",
+    "Pourquoi ça existe, quel problème ça résout ? Les pointeurs permettent de gérer la mémoire dynamiquement en fonction des besoins de l'application.",
+    "Comment ça fonctionne en interne Un pointeur est un nombre entier qui représente l'adresse d'une variable ou d'un bloc de mémoire dans le système.",
+    "Ce qu'il faut absolument savoir en pratique Les pointeurs sont utilisés pour pointer vers des variables, des fonctions et des blocs de mémoire. Il faut bien comprendre comment les initialiser et les utiliser correctement pour éviter les erreurs de gestion de la mémoire.",
+    "Subtilités, pièges, cas avancés - Les pointeurs peuvent être utilisés pour passer des paramètres par valeur ou par référence. Lorsqu'on utilise des pointeurs en C, il faut toujours considérer le problème d'aliasation (déclaration d'une variable avec un nom différent du nom de la variable dans une fonction)."
+  ],
+  "code": "",
+  "situation": ""
+}

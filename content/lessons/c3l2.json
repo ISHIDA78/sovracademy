@@ -1,0 +1,16 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ?",
+    "Le hash (ou chiffrage) est une fonction qui prend un échantillon de données et renvoie un code unique, appelé hachisse ou hash value.",
+    "Pourquoi ça existe ?",
+    "Il résout le problème de la sécurité des données : les données stockées sur disques durs ou en mémoire ne peuvent pas être modifiées sans déclencher une alerte de sécurité.",
+    "Comment ça fonctionne en interne ?",
+    "La plupart du temps, le hash est calculé à l'aide d'une fonction cryptographique appelée algorithme de chiffrage. Les algorithms les plus couramment utilisés sont SHA-256 ou MD5.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Il faut choisir un algorithme approprié pour la taille et le type de données qui seront stockées.",
+    "Subtilités, pièges, cas avancés :",
+    "Certains algorithmes comme ceux basés sur le hash peuvent être affectés par la qualité du système de chiffrage utilisé. Cela nécessite une compréhension approfondie de ces techniques pour éviter les compromis potentiels."
+  ],
+  "code": "",
+  "situation": ""
+}

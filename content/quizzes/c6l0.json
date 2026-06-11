@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que le modèle de menace (Threat Model) visant à identifier les menaces potentielles contre un système informatique?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Analyse des vulnérabilités systémiques",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Détection des logiciels malveillants",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Vérification de la conformité réglementaire",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Prévention des attaques par phishing",
+      "correct": false
+    }
+  ],
+  "explanation": "Analyser les menaces potentielles pour identifier et prioriser les vulnérabilités du système."
+}

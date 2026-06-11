@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que le mTLS ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Technologie de Sécurité des Communications",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Protocole d'Encapsulation de Données",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Méthode de Synchronisation des Temps",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Technologie de Sécurité pour les Réseaux",
+      "correct": false
+    }
+  ],
+  "explanation": "Le mTLS est une technologie de sécurité pour les réseaux qui s'assure la vérification d'identités des clients."
+}

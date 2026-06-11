@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que l'hooking de fonction ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "appel à une fonction sans appel originale",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "appel à une fonction avec appel originale",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "appel à un système d'appels",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "appel à une autre fonction",
+      "correct": false
+    }
+  ],
+  "explanation": "L'hooking de fonction consiste à appeler une fonction sans son appel originale"
+}

@@ -1,0 +1,18 @@
+{
+  "concept": [
+    "Qu'est-ce que le TLS 1.3 ?",
+    "Qu'est-ce que le mTLS ?",
+    "Pourquoi utiliser le TLS 1.3 et le mTLS ?",
+    "Comment fonctionne le TLS 1.3 en interne ?",
+    "Comment fonctionne le mTLS ?",
+    "Ce qu'il faut absolument savoir en pratique :",
+    "Utiliser les certificats de confiance",
+    "Utiliser la version 1.3 du protocole",
+    "Subtilités, pièges, cas avancés :",
+    "Utiliser l'extension \"PSK-DHE\" pour sécuriser les connexions",
+    "Vérifier régulièrement les certificats de confiance",
+    "Gérer les connexions manquantes avec le mTLS"
+  ],
+  "code": "",
+  "situation": ""
+}

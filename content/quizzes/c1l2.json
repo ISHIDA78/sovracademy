@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un syscall user, définition technique ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Appel à un service système administré par le kernel",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Interface utilisateur pour l'accès à des services système",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Processeur qui exécute les instructions système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": " Mémoire vive de l'ordinateur",
+      "correct": false
+    }
+  ],
+  "explanation": "Un syscall user est un appel à un service système administré par le kernel."
+}

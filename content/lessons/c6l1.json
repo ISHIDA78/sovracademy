@@ -1,0 +1,28 @@
+{
+  "concept": [
+    "Qu'est-ce que l'enumeration ?",
+    "L'enumeration est un processus qui consiste à lister les éléments d'un ensemble sans les traiter.",
+    "Cela permet de découvrir des informations sensibles sur un système ou un application.",
+    "En enumeration, on cherche à identifier toutes les vulnérabilités potentielles pour une attaque.",
+    "Pourquoi l'enumeration ?",
+    "L'enumeration est utile car elle peut révéler des erreurs de configuration, des vulnérabilités de sécurité et des failles de conception.",
+    "Cela peut aider les administrateurs système à prendre des mesures correctives et à prévenir les attaques.",
+    "Comment fonctionne l'enumeration ?",
+    "L'enumeration se fait généralement en utilisant des outils comme nmap ou Nessus pour explorer les ports et les services disponibles sur un système.",
+    "Ces outils émettent des requêtes réseau pour découvrir les informations sur le système.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "L'enumeration doit être effectuée de manière respectueuse et autorisée, en conformité avec la politique de sécurité du système.",
+    "Les administrateurs système doivent être conscients des risques potentiels associés à l'enumeration et prendre des mesures pour minimiser ces risques.",
+    "Subtilités",
+    "L'enumeration peut également être utilisée pour découvrir des informations sensibles sur un système, comme les mots de passe ou les clés de cryptage.",
+    "Les administrateurs système doivent être vigilants pour éviter d'être découverts lors de l'enumeration.",
+    "Piges",
+    "L'enumeration peut également être utilisée par les attaquants pour découvrir les vulnérabilités du système et planifier une attaque plus efficace.",
+    "Les administrateurs système doivent être conscients de ces risques et prendre des mesures correctives pour prévenir les attaques.",
+    "Cas avancés",
+    "L'enumeration peut également être utilisée en combinaison avec d'autres techniques, comme la reconnaissance et l'exploitation, pour créer une attaque complète.",
+    "Les administrateurs système doivent être conscients de ces risques et prendre des mesures correctives pour prévenir les attaques."
+  ],
+  "code": "# Utiliser nmap pour explorer les ports du système\nnmap -sT <adresse_IP>\n\n# Utiliser Nessus pour explorer les services disponibles sur le système\nNessus --scan <adresse_IP>\n\n# Utiliser des outils comme hypotonic ou masscan pour découvrir des informations sensibles sur le système\nhyopotonic -t <adresse_IP>\nmasscan -p 1-1024 -s <adresse_IP>",
+  "situation": "Un administrateur système découvre que son serveur Web est vulnérable à une attaque de type SQL Injection. Il décide d'effectuer une enumeration pour découvrir les informations sensibles sur le système et identifier les vulnérabilités potentielles."
+}

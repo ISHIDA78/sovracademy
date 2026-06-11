@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un noyau (Kernel) dans un système d'exploitation?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Application secondaire du système",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Partie centrale de la gestion des ressources",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Module supplémentaire de sécurité",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Composant non essentiel du système",
+      "correct": false
+    }
+  ],
+  "explanation": "La partie centrale de la gestion des ressources et des processus"
+}

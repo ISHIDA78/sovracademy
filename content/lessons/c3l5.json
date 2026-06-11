@@ -1,0 +1,13 @@
+{
+  "concept": [
+    "Qu'est-ce que les canaux latéraux (side-channel) ? C'est un type d'attaque visant à extraire des informations sensibles sur un système en analysant des signaux secondaires générés par son fonctionnement.",
+    "Pourquoi ça existe, quel problème ça résout ? Les attaques de canaux latéraux peuvent permettre à l'attaquant de déterminer la valeur d'une variable sensible sans avoir accès direct à elle. Cela peut être utile dans des scénarios où un accès physique est impossible.",
+    "Comment ça fonctionne en interne ? Un canal lateral se produit lorsqu'un système génère des signaux secondaires pour les aider à fonctionner, comme la fréquence de l'horloge d'un processeur ou la consommation de puissance. L'attaquant peut analyser ces signaux pour extraire des informations sur le système.",
+    "Ce qu'il faut absolument savoir en pratique : identifier les canaux latéraux potentiels et prendre des mesures pour les protéger, comme l'utilisation de techniques de cryptage et d'obfuscation.",
+    "Subtilités, pièges, cas avancés :",
+    "* Les attaques de canaux latéraux peuvent être difficiles à détecter car elles sont souvent indistinguables des comportements normaux du système.",
+    "* L'utilisation de techniques de cryptage peut rendre les canaux latéraux moins efficaces, mais il faut veiller à ce que le cryptage ne compromette pas la sécurité du système."
+  ],
+  "code": "",
+  "situation": ""
+}

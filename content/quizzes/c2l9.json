@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le rôle principal d'Editeur de texte multi-puissance conçu pour les développeurs dans Linux?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Saisie rapide des fichiers textes",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Protection contre la saisie abusive",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Faciliter la saisie rapide des fichiers textes",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Gestion des fichiers texte système",
+      "correct": false
+    }
+  ],
+  "explanation": "L'éditeur est conçu pour faciliter la saisie rapide et sécuriser les fichiers textes."
+}

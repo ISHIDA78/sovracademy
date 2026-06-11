@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que l'enumeration en sécurité officative ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "traitement d'un ensemble",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "découverte d'informations sensibles sur un système",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "analyse de données pour attaques",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "utilisation de outils de détection",
+      "correct": false
+    }
+  ],
+  "explanation": "Processus qui permet de découvrir des informations sensibles sur un système sans les traiter."
+}

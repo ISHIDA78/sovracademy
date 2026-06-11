@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que l'exercice `unsafe` en Rust permet de faire ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Faire des opérations de sécurité",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Accéder à des points de la mémoire allouée sans contrôles",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Gérer les exceptions système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Sécuriser les points de code sensibles",
+      "correct": false
+    }
+  ],
+  "explanation": "L'exercice `unsafe` permet d'éviter les contrôles de sécurité de Rust pour accéder à la mémoire allouée."
+}

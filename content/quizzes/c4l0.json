@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le niveau OSI correspondant à la transmission des données entre deux appareils sans fil ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "L3",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "L2",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "L4",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "L1",
+      "correct": false
+    }
+  ],
+  "explanation": "L2 est responsable de la transmission des données sans fil, en utilisant les protocoles PPP et HDLC."
+}

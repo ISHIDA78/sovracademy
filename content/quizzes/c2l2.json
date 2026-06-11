@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le rôle principal de systemd dans un système Linux ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Gérer les processus en arrière-plan",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Déployer des services et gérer leur dépendance",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Utiliser l'hôte journald pour stocker les journaux",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Simplifier la gestion de réseaux et d'interfaces réseau",
+      "correct": false
+    }
+  ],
+  "explanation": "Déployer des services et gérer leur dépendance"
+}

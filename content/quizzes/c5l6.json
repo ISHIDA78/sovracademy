@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'une API (Application Programming Interface) dans le contexte des langages système ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Interface utilisateur pour les applications web",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Fonctionnalité de compilation de source code",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Interface entre un logiciel et son environnement système",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Méthode de sauvegarde des données dans un répertoire",
+      "correct": false
+    }
+  ],
+  "explanation": "L'interface qui permet à un logiciel d'accéder aux services du système"
+}

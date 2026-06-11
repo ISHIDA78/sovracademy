@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ? Un processus est un unité d'exécution indépendante, capable de partager des ressources système.",
+    "Pourquoi ça existe ? Résout le problème du partage des ressources sans compromettre la stabilité du système.",
+    "Comment ça fonctionne en interne ? Un processus est créé dans une pile de priorités et géré par l'algorithme de scheduling.",
+    "Ce qu'il faut absolument savoir en pratique : identifier et gérer efficacement les processes.",
+    "SITUATION:",
+    "Imaginez un serveur web qui doit traiter plusieurs requêtes simultanément, il doit gérer la répartition des ressources pour s'assurer de la performance optimale."
+  ],
+  "code": "",
+  "situation": "Imaginez un serveur web qui doit traiter plusieurs requêtes simultanément, il doit gérer la répartition des ressources pour s'assurer de la performance optimale."
+}

@@ -1,0 +1,22 @@
+{
+  "concept": [
+    "Qu'est-ce que l'Assemblage x86-64 ?",
+    "L'Assemblage x86-64 est un langage de programmation bas niveau utilisé pour programmer directement les processseurs x86-64.",
+    "C'est une représentation symbolique des instructions et des données à traiter par le processeur.",
+    "Pourquoi ça existe, quel problème ça résout ?",
+    "L'Assemblage x86-64 permet aux programmeurs de prendre le contrôle direct du processeur pour optimiser les performances et la sécurité.",
+    "Cela résout le problème de la traduction entre le langage de programmation et le code machine.",
+    "Comment ça fonctionne en interne ?",
+    "L'Assemblage x86-64 utilise des instructions spécifiques à l'architecture x86-64 pour exécuter les opérations arithmétiques, logiques et de contrôle.",
+    "Les instrukctions sont représentées par un nom unique et sont exécutées directement par le processeur.",
+    "Ce qu'il faut absolument savoir en pratique ?",
+    "Comprendre la syntaxe et les instructions de base de l'Assemblage x86-64.",
+    "Utiliser des outils pour compiler et exécuter le code Assemblage x86-64.",
+    "Subtilités, pièges, cas avancés :",
+    "* Utilisation de registres pour stocker les valeurs",
+    "* Gestion des interruptions et des exceptions",
+    "* Optimisation des performances en utilisant des instructions avancées"
+  ],
+  "code": "",
+  "situation": ""
+}

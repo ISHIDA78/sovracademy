@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un pipeline informatique ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Une fonctionnalité d'exécution en séquence",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Un ensemble de données qui peuvent être traités en parallèle",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Un type de processeur",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Une technique d'optimisation du code",
+      "correct": false
+    }
+  ],
+  "explanation": "Un pipeline informatique est un ensemble d'instructions qui sont traitées en parallèle."
+}

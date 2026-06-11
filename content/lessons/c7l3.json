@@ -1,0 +1,16 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ? Un conteneur (ou Docker) est une empatissière virtuelle qui isolent un application et son environnement d'exécution.",
+    "Pourquoi ça existe, quel problème ça résout ? Les applications modernes nécessitent souvent des dépendances de développement spécifiques, ce qui peut créer des problèmes de portabilité et de sécurité lorsqu'elles sont exécutées sur différents systèmes d'exploitation.",
+    "Comment ça fonctionne en interne ? Un conteneur est créé à partir d'un image Docker, qui contient tout ce dont a besoin l'application : bibliothèques, frameworks, etc. Lorsque le conteneur est lancé, un environnement virtuel est créé pour l'exécution de l'application.",
+    "Ce qu'il faut absolument savoir en pratique La conception et la gestion efficaces des conteneurs nécessitent une compréhension approfondie de leur fonctionnement interne et des best practices pour minimiser les vulnérabilités.",
+    "SUBTILÉS :",
+    "- Utilisez des images Docker à jour et mises à jour régulièrement.",
+    "- Mettez en place un système de déploiement continu (CI/CD) pour déployer et tester vos conteneurs régulièrement.",
+    "CASE AVANÇÉE :",
+    "- Les conteneurs peuvent être exécutés sur des systèmes d'exploitation différents, ce qui permet une plus grande flexibilité dans la gestion des applications.",
+    "- Les conteneurs peuvent également être utilisés pour créer un environnement de test sécurisé pour les applications."
+  ],
+  "code": "",
+  "situation": ""
+}

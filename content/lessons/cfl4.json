@@ -1,0 +1,27 @@
+{
+  "concept": [
+    "Qu'est-ce qu'un shell ?",
+    "Un shell est un environnement interactif permettant d'exécuter des commandes.",
+    "Il s'affiche sous forme de ligne de commande et permet aux utilisateurs de saisir des commandes.",
+    "Le shell interagit avec l'utilisateur pour exécuter les commandes.",
+    "Cela permet à l'utilisateur de personnaliser son expérience de travail.",
+    "Pourquoi ça existe, quel problème ça résout ?",
+    "Le shell solve le problème de la communication entre l'utilisateur et le système.",
+    "Il permet aux utilisateurs de saisir des commandes et d'exécuter des tâches complexes.",
+    "Il facilite l'accès à des outils et des logiciels pour lesquels on n'a pas besoin de connaissances avancées.",
+    "Comment ça fonctionne en interne ?",
+    "Le shell utilise un système de syntaxe pour traiter les commandes saisies par l'utilisateur.",
+    "Cela comprend le parsing, la lecture du code source, et l'exécution des commandes.",
+    "La commande est ensuite transmise au noyau (kernel) pour exécutation.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Connaître les syntaxes de base des commandes Unix.",
+    "Apprendre à utiliser le shell pour exécuter des tâches complexes.",
+    "Développer la compétence d'utiliser des commandes pour personnaliser son expérience de travail.",
+    "Subtilités, pièges, cas avancés",
+    "Les erreurs typiques et leurs solutions les plus courantes.",
+    "Il faut également avoir une bonne compréhension du contexte dans lequel est utilisé chaque commande.",
+    "L'utilisation des options et arguments de commandes peut être complexe."
+  ],
+  "code": "",
+  "situation": ""
+}

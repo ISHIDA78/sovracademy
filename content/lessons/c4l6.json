@@ -1,0 +1,31 @@
+{
+  "concept": [
+    "Qu'est-ce qu'une VPN ?",
+    "Une connexion sécurisée à distance pour protéger les données.",
+    "En permettant la communication sûre sur Internet.",
+    "Les entreprises et individus en usage.",
+    "Pour protéger les informations sensibles.",
+    "Garde des données confidentielles.",
+    "Pourquoi ça existe, quel problème ça résout ?",
+    "Protéger les données contre les interceptages.",
+    "Mettre en place un système sécurisé pour communiquer.",
+    "Pétrir les réseaux publics et les vulnérabilités.",
+    "Sécuriser les informations sensibles de manière efficace.",
+    "Comment ça fonctionne en interne ?",
+    "Utilisation d'algorithmes cryptographiques avancés.",
+    "Création d'un canal sécurisé pour les données.",
+    "Utilisation des protocoles VPN comme WireGuard ou OpenVPN.",
+    "Mise en place d'un système de chiffrement.",
+    "Ce qu'il faut absolument savoir en pratique :",
+    "Choisir un client VPN sécurisé.",
+    "Configurez correctement vos paramètres pour fonctionner.",
+    "Comprendre les risques et les menaces potentielles.",
+    "Subtilités, pièges, cas avancés :",
+    "Utilisation de tunnels VPN pour contourner les bloqueurs.",
+    "Gestion des clés et des certificats pour une authentification sécurisée.",
+    "Mise à jour régulière du logiciel VPN pour rester protégé.",
+    "Réponse à la question : \"Est-ce que le serveur VPN est sécurisé ?\""
+  ],
+  "code": "",
+  "situation": ""
+}

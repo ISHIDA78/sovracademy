@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un bootloader ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Un programme chargé les modules système.",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Un programme chargé le noyau du système.",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Un programme chargé la configuration système.",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Un programme chargé les données utilisateur.",
+      "correct": false
+    }
+  ],
+  "explanation": "Le bootloader charge le noyau d'un système, assurant son démarrage correct"
+}

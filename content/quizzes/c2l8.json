@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que le rôle principal de Tmux dans la gestion des sessions de terminal ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Gérer les fenêtres et panneaux",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Ouvrir et gérer plusieurs sessions simultanément",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Créer des sauvegardes automatiques",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Gérer les permissions des utilisateurs",
+      "correct": false
+    }
+  ],
+  "explanation": "L'option B est la bonne réponse car Tmux permet de gérer plusieurs sessions concurrentes"
+}

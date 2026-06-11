@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que la mémoire virtuelle ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Un concept qui permet à un système d'accéder à des adresses de mémoire physiques.",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Un concept qui permet à un système d'accéder à des adresses de mémoire virtuelles.",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Un concept qui permet à un système de gérer la mémoire physique.",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Un concept qui permet à un système de stocker des données sur le disque dur.",
+      "correct": false
+    }
+  ],
+  "explanation": "La mémoire virtuelle est un espace d'adresse commun pour l'ensemble des applications et du système d'exploitation"
+}

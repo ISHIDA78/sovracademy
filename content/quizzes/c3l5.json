@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un canal latéral en cryptographie ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Toute attaque visant le fonctionnement du système",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Extraire des informations sur un système à partir de signaux secondaires",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Un type d'attaque visant à manipuler les donnés",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Analyser la sécurité des protocoles de communication",
+      "correct": false
+    }
+  ],
+  "explanation": "Analyser des signaux secondaires pour extraire des informations sensibles sur un système"
+}

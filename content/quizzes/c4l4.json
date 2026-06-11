@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le but principal de gRPC dans les API de communication?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Améliorer la sécurité",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Réduire les coûts d'infrastructure",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Augmenter la complexité de l'API",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Accroître la couverture géographique",
+      "correct": false
+    }
+  ],
+  "explanation": "Réduire les coûts d'infrastructure et améliorer la performances"
+}

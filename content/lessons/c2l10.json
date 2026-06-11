@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Qu'est-ce que la redirection ?",
+    "Pourquoi utiliser des redirections ?",
+    "Comment fonctionnent-elles en interne ?",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Subtilités et pièges à éviter",
+    "Cas avancés : variables, test de redirige"
+  ],
+  "code": "# Rédirection standard (>) pour afficher le contenu d'un fichier\necho \"Bonjour\" > monfichier.txt\n# Rédirection vers un fichier (>>) pour l'écrire dans un autre fichier\necho \"Salut\" >> monfichier2.txt\n\n# Rédirection de sortie de commande (2>) en arrière-plan\necho -n \"Quel est ton nom ? \"\nread nom\necho \"Bonjour $nom !\" 2>erreur.log # Redirige l'erreur dans un fichier\n\n# Rédirection standard à partir d'un fichier (><)\ncat monfichier.txt < monautrefile.txt\n\n# Test de redirige pour vérifier si une commande a réussi ou non\nif [ $? -eq 0 ]; then echo \"Oui la commande s'est exécutée\"; fi",
+  "situation": "En tant que système administrateur, vous devez afficher un message d'erreur dans un fichier de log chaque fois qu'une commande échoue. Comment allez-vous utiliser les redirections pour réaliser cela ?"
+}

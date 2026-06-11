@@ -1,0 +1,10 @@
+{
+  "concept": [
+    "Qu'est-ce que Vim ? Éditeur de texte multi-puissance conçu pour les développeurs.",
+    "Pourquoi ça existe, quel problème ça résout ? Sécuriser les fichiers textes et faciliter la saisie rapide.",
+    "Comment ça fonctionne en interne Vim utilise une structure hiérarchique de fenêtres pour afficher et éditer le contenu du fichier texte.",
+    "Ce qu'il faut absolument savoir en pratique Utiliser les raccourcis clavier, créer des fichiers de configuration pour personnaliser l'interface."
+  ],
+  "code": "# Créer un nouveau fichier avec Vim\nmkdir exemple\ntouch exemple/example.txt\n\n# Éditer le fichier avec Vim\nvim example/example.txt\n\n# Utiliser les raccourcis clavier (Ctrl + S : Sauvegarder, Ctrl + Q : Quitter)\n:ls\nCtrl+S\n\n# Créer un fichier de configuration pour personnaliser l'interface\nvim ~/.vimrc\n```\n\n# Configurer Vim pour utiliser la commande 'set so' pour visualiser les erreurs syntaxiques\nset so\n```bash\n# Utiliser la commande 'set so' pour visualiser les erreurs syntaxiques\n: set so",
+  "situation": ""
+}

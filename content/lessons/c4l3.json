@@ -1,0 +1,21 @@
+{
+  "concept": [
+    "Qu'est-ce que BGP ?",
+    "BGP est une protocole routage Internet utilisé pour déterminer la voie la plus courte pour les trafics réseau.",
+    "Il permet à plusieurs routeurs d'échanger des informations sur leurs tables de routage.",
+    "Pourquoi ça existe, quel problème ça résout ?",
+    "Les réseaux complexes nécessitent un mécanisme pour définir les routes entre eux.",
+    "Le BGP s'assure que le trafic est dirigé vers la destination la plus proche possible.",
+    "Comment ça fonctionne en interne ?",
+    "L'adoption de la route la plus courte implique des échanges de messagerie entre les routeurs.",
+    "Ceux-ci partagent leurs connaissances sur leur table de routage pour arriver à un accord.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Les routes doivent être définies avec précision, pour éviter les erreurs de routage.",
+    "Il est important de mettre en place des mécanismes de vérification pour détecter tout problème.",
+    "Subtilités",
+    "Le BGP utilise l'algorithme RIB (Routing Information Base).",
+    "Il doit toujours être configuré correctement pour garantir la stabilité du réseau."
+  ],
+  "code": "# Configuration par défaut du routeur\nroot@router> configure terminal\n# Configuration de la table de routage BGP\nroot@router> router bgp 64512\n  # Création d'un groupe de routeurs\nroot@router> neighbor 192.168.1.2 remote-as 64513\n# Suppression des routes non utilisées\nroot@router> cleanup-interval 180\n```\nLe code ci-dessus permet à un routeur de configurer la table BGP et de définir un groupe de routeurs avec lesquels il échanger des informations. Il configure également l'intervalle de suppression des routes non utilisées.",
+  "situation": "Dans une entreprise, plusieurs sites sont connectés via Internet. Chaque site doit avoir accès à Internet via une seule interface, mais en raison de la complexité du réseau, il est difficile d'établir une route unique pour tous les trafics. C'est là que le BGP peut être utilisé pour définir les routes entre les sites et garantir un accès stable au réseau."
+}

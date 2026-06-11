@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Qu'est-ce que le hardening ? Réduction des vulnérabilités dans un système.",
+    "Pourquoi ? Améliorer la sécurité contre les attaques.",
+    "Comment ça fonctionne en interne : Ajout de contrôles supplémentaires pour limiter l'exécution d'applications non autorisées.",
+    "Ce qu'il faut absolument savoir en pratique : sélection des paramètres de sécurité appropriés.",
+    "Subtilités, pièges : les mésaventures de l'optimisation."
+  ],
+  "code": "# Création d'un fichier de configuration pour le hardening\necho \"hardening enabled\" >> /etc/selinux/config\n\n# Réconfiguration de la politique SELinux pour limiter les permissions des utilisateurs\nsetenforce 0\nselinux Enable=1\n\n# Utilisation du module auditd pour surveiller les activités système\nauditd enable = 1\n\n# Installation du paquet de sécurité OpenSSH\nsudo yum install -y openssh-server\n\n# Configuration de la clé SSH sécurisée\nssh-keygen -t rsa -b 4096 >> /etc/ssh/sshd_config",
+  "situation": "Un petit site web utilise une version obsolète d'Apache et des bibliothèques de sécurité basées sur PHP. Un administrateur système décide de mettre en place un hardening pour améliorer la sécurité du serveur, notamment en ajoutant des contrôles pour limiter les permissions des utilisateurs et en configurant le module auditd pour surveiller les activités système."
+}

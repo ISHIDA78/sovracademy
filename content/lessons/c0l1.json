@@ -1,0 +1,21 @@
+{
+  "concept": [
+    "Qu'est-ce que les registres ?",
+    "Les registres sont des espaces mémoire temporaires utilisés par la CPU pour stocker des valeurs immédiates.",
+    "Ils servent à stocker les données qui ne changent pas souvent, tels les adresses de mémoire ou les valeurs de contrôle.",
+    "Pourquoi ça existe ?",
+    "Les registres existent pour accélérer le processus d'exécution du programme en réduisant la quantité de fois où la CPU doit aller chercher des données dans la RAM.",
+    "Ils résolvent également le problème du temps de transmission, qui est crucial pour les systèmes informatiques.",
+    "Comment ça fonctionne en interne ?",
+    "Les registres sont stockés sur la mémoire cache ou dans la RAM. La CPU peut y lire et écrire directement sans avoir à aller chercher des données supplémentaires.",
+    "Il existe différents types de registres, tels que les registres généralistes (RAX, RBX, etc.) et ceux spécifiques aux opérations (RSP, RBP, etc.).",
+    "Ce qu'il faut absolument savoir en pratique :",
+    "Les registres doivent être initialement affectés à des valeurs appropriées au début d'un programme.",
+    "Il est important de comprendre comment les registres sont utilisés pour la gestion des adresses de mémoire et des pointeurs.",
+    "Subtilités, pièges, cas avancés :",
+    "- Certains registres peuvent être définis automatiquement par la plateforme.",
+    "- Il faut bien comprendre l'ordre de traitement des registres (RAX -> RBP -> RSP) dans les opérations."
+  ],
+  "code": "",
+  "situation": ""
+}

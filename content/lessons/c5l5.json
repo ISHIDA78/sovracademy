@@ -1,0 +1,23 @@
+{
+  "concept": [
+    "Qu'est-ce que l'ELF ?",
+    "Pourquoi existe-t-il ?",
+    "Comment il est formaté ?",
+    "L'ELF (Executive Load Format) est un format de fichier qui contient le code exécutable d'un programme Linux. Il permet au système de charger et de loader les programmes en mémoire.",
+    "La raison pour laquelle on utilise l'ELF, c'est qu'il offre une grande flexibilité et des fonctionnalités avancées pour gérer les programmes, comme la gestion des liens dynamiques, la partitionnement et la compression.",
+    "Comment l'ELF est formaté ?",
+    "Il est composé de diverses parties :",
+    "- Le header : contient les informations de base sur le programme, comme son adresse de démarrage, sa taille et ses dépendances.",
+    "- La section de texte : contient le code exécutable du programme.",
+    "- Les sections de données et des sections de bibliothèques : contiennent les données statiques et les liens dynamiques du programme.",
+    "Ce qu'il faut absolument savoir en pratique :",
+    "- Comment lire et écrire des fichiers ELF",
+    "- Comment utiliser les outils pour analyser et modéliser les programmes ELF",
+    "SUBTILÉS, PIÈGES, CAS AVANCÉS :",
+    "- Les formats ELF peuvent être également utilisés sous forme de code née à partir de C.",
+    "- La compression ELF est une technique qui peut être utilisée pour réduire la taille des fichiers.",
+    "- Certains programmeurs utilisent un format plus spécifique, le COFF (Common Object File Format), dans certains systèmes."
+  ],
+  "code": "",
+  "situation": ""
+}

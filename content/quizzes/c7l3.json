@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un conteneur Docker, en termes de sécurité ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Séparation des applications indépendantes",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Protection des données sensibles",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Vérification de la compatibilité des bibliothèques",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Gestion des mises à jour des applications",
+      "correct": false
+    }
+  ],
+  "explanation": "Un conteneur Docker est une empatissière virtuelle qui isolent une application et son environnement d'exécution"
+}

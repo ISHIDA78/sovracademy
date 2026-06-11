@@ -1,0 +1,21 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ?",
+    "Heap exploitation est une technique utilisée pour détruire les mémoires alloués par un programme pour attaquer un système.",
+    "Pourquoi ça existe, quel problème ça résout ?",
+    "Il permet aux attaquants de déséquilibrer le système en réduisant la mémoration disponible pour éviter l'arrêt du processus ou de l'appareil.",
+    "Comment ça fonctionne en interne (mécanisme concret)",
+    "Lorsqu'un programme utilise un tableau dynamique, il alloue des mémoires sur le pile. Les éléments sont répartis selon leur taille et sont stockés dans des blocs de la même taille.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Comprendre les formats de memoire et comment gérer les allocations dynamiques.",
+    "Subtilités, pièges, cas avancés",
+    "Les attaques sur les piles peuvent être très complexes ; cependant, il est essentiel d'analyser soigneusement le comportement des applications pour identifier une vulnérabilité.",
+    "CONCEPT:",
+    "Créer un exploit implique plusieurs étapes :",
+    "Étape 1 : Trouver la vulnérabilité dans l'application.",
+    "Étape 2 : Analyser et identifier la fonction cible de la vulnérabilité.",
+    "Étape 3 : Déterminer le type d'exploit approprié pour atteindre la vulnérabilité."
+  ],
+  "code": "#!/bin/bash\n\n# Test de heap exploitation avec un exemple simple\nstack_size=1024\nmalloc() {\n    local addr=$1\n    local size=$2\n    \n    # Création d'une structure de données pour simuler l'allocation de mémoire\n    # Pour réellement détruire la pile, vous devriez utiliser des pointeurs arborescents\n    echo \"Allocating memory at address $addr for $size bytes\"\n    \n    # Simulant une allocation avec succès\n    if (( size > 0 )); then\n        (( addr += size ))\n        \n        # Affichage du contenu de l'adresse allouée\n        echo -n \"$addr \"\n    fi\n    \n}\n\n# Création d'un tableau pour tester la pile\nfor (( i=0 ; i<stack_size ; i++ )); do\n    malloc /dev/null 1\ndone\n\n# Affichage du résultat\necho \"Fin de l'allocation\"",
+  "situation": ""
+}

@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Une porte logique est un circuit qui effectue une opération booléenne sur un ou plusieurs bits.",
+    "Elles existent pour représenter physiquement les opérations AND, OR, NOT, XOR en électronique.",
+    "En interne : deux transistors en série (AND) ou en parallèle (OR) contrôlent le passage du courant.",
+    "À retenir : l'ALU combine des milliers de portes pour effectuer additions, comparaisons, décalages.",
+    "Subtilité : NAND et NOR sont universelles — n'importe quelle fonction logique peut être construite avec elles seules."
+  ],
+  "code": "# Portes logiques en Python (simulation)\nA, B = 1, 0\n\n# AND : vrai si les deux entrées sont vraies\nprint(A & B)   # 0\n\n# OR : vrai si au moins une entrée est vraie\nprint(A | B)   # 1\n\n# NOT : inverse\nprint(~A & 1)  # 0\n\n# XOR : vrai si les entrées sont différentes\nprint(A ^ B)   # 1\n\n# NAND (universelle)\ndef nand(a, b): return not (a and b)\nprint(nand(1, 1))  # False\nprint(nand(1, 0))  # True\n\n# Construire AND depuis NAND\ndef and_from_nand(a, b): return nand(nand(a, b), nand(a, b))\nprint(and_from_nand(1, 1))  # True",
+  "situation": "Un compilateur C génère des instructions qui descendent jusqu'à des opérations ALU : a & b dans ton code devient littéralement une instruction AND sur les registres du CPU."
+}

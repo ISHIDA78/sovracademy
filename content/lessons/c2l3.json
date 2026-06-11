@@ -1,0 +1,17 @@
+{
+  "concept": [
+    "Qu'est-ce que c'est ? Le nftables est un système de sécurité réseau basé sur les tables NFTABLES. Il permet de contrôler le trafic réseau en fonction de règles spécifiques.",
+    "Pourquoi ça existe, quel problème ça résout ? Le nftables résout le problème du trafic réseau excessif et des attaques menacées par l'internet.",
+    "Comment ça fonctionne en interne Le nftables utilise une table de règles pour analyser le trafic réseau et appliquer des actions spécifiques.",
+    "Ce qu'il faut absolument savoir en pratique Utiliser les commandes `nft` pour créer, modifier et supprimer les tables NFTABLES.",
+    "Subtilités et pièges : les règles nftables peuvent être complexes à comprendre et à personnaliser. Il est important de prendre en compte l'ordre des règles pour éviter les conflits.",
+    "CONCEPT:",
+    "Qu'est-ce que c'est ? Le commandement `ss` permet de visualiser le trafic réseau actuel, y compris la connexion et le protocole utilisés.",
+    "Pourquoi ça existe, quel problème ça résout ? Le commandement `ss` résout le problème du manque d'informations sur le trafic réseau en temps réel.",
+    "Comment ça fonctionne en interne Le `ss` utilise des tables de routage pour analyser les informations de connexion et afficher les résultats.",
+    "Ce qu'il faut absolument savoir en pratique Utiliser les options `-a` ou `-f` pour afficher tous les protocoles utilisés par un processus ou un tunnel.",
+    "Subtilités, pièges : le `ss` n'affiche pas la date de création des connexions, on utilise donc `ps -ef` pour voir cette information."
+  ],
+  "code": "",
+  "situation": ""
+}

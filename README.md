@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SŌVR Academy
 
-## Getting Started
+Formation white-hat en ligne de commande — interface TUI type airgeddon.
 
-First, run the development server:
+## Stack
+
+- Next.js 14 (App Router) · TypeScript · Tailwind CSS
+- NextAuth.js v4 (Credentials provider)
+- Prisma v7 + SQLite (via `better-sqlite3`)
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npx prisma migrate dev --name init
+npm run seed        # crée les comptes demo/academy et etienne/sovr2024
+npm run dev         # lance sur http://localhost:3003
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variables d'environnement (`.env`)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+DATABASE_URL="file:./dev.db"
+NEXTAUTH_SECRET="..."          # clé secrète JWT, min 32 chars
+NEXTAUTH_URL="http://localhost:3003"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Comptes de démo
 
-## Learn More
+| login     | password  |
+|-----------|-----------|
+| demo      | academy   |
+| etienne   | sovr2024  |
 
-To learn more about Next.js, take a look at the following resources:
+## Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route   | Description |
+|---------|-------------|
+| `/boot` | Landing — kernel log + formulaire Sign in visible + lien caché |
+| `/login`| TTY login Arch Linux (pur terminal) |
+| `/app`  | Shell principal (protégé, requiert auth) |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Commandes shell (dans `/app`)
 
-## Deploy on Vercel
+```
+[0-8/F]   sélectionner cursus / leçon
+ls        afficher le menu courant
+start     démarrer/reprendre la leçon
+next      leçon suivante
+b         retour
+score     progression XP
+clear     nettoyer l'écran
+exit      se déconnecter
+poweroff  éteindre la session
+h         aide
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Curriculum (9 couches)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+c0 Architecture CPU → c1 Théorie OS → c2 Linux → c3 Cryptographie
+→ c4 Réseaux → c5 Langages système → c6 Sécurité offensive
+→ c7 Sécurité défensive → cf Build Your Own OS (White Hat Cert)
+
+Chaque couche se débloque une fois la précédente complétée à 100%.
+
+## Ajouter du contenu
+
+Édite `lib/curriculum.ts` pour ajouter des leçons/couches, puis dans
+`app/app/page.tsx` → fonction `lessonNodes()`, ajoute un cas `if (lid === '...')`.

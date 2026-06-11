@@ -1,0 +1,21 @@
+{
+  "concept": [
+    "Qu'est-ce que la communication inter-processus (IPC) ?",
+    "Pourquoi IPC existe, quel problème elle résout ?",
+    "Comment IPC fonctionne en interne avec les pipes et les sockets ?",
+    "Ce qu'il faut absolument savoir en pratique pour utiliser les systèmes d'identification et de contrôle des ressources partagées.",
+    "Subtilités : l'utilisation des pipes et des sockets nécessite une compréhension précise de la sérialité des données, du mécanisme de gestion des erreurs. Cas avancés : l'utilisation des fichiers système pour synchroniser les modifications d'un processus avec un autre.",
+    "CONCEPT:",
+    "La communication inter-processus (IPC) permet à plusieurs programmes de communiquer entre eux en temps réel. Les pipes et les sockets sont deux mécanismes principaux utilisés pour cette communication.",
+    "CONCEPT:",
+    "Les pipes fournissent une connexion temporaire entre deux processus, permettant la lecture et l'écriture des données dans un flux continu. Les sockets, quant à elles, établissent une connexion persistante entre deux points de terminaison réseau, permettant les communications bidirectionnelles.",
+    "CONCEPT:",
+    "Les systèmes d'identification et de contrôle des ressources partagées (Sécurité) sont essentiels pour s'assurer que les modifications apportées à un processus ne contaminent pas d'autres processus.",
+    "CONCEPT:",
+    "Pour utiliser les systèmes d'identification et de contrôle des ressources partagées, il faut comprendre comment se synchroniser les modifications entre deux processus. Cela nécessite la connaissance de systèmes tels que les fichiers système et les mécanismes de gestion des erreurs pour éviter les conflits.",
+    "CONCEPT:",
+    "La lecture des pipes est synchrone par rapport à l'écriture, permettant aux deux processus de communiquer dans un flux continu. Si une erreur se produit lors d'une opération sur la fin du pipe, le programme doit être capable de gérer cette erreur en temps réel."
+  ],
+  "code": "# Création d'un pipe pour la communication entre deux processus\nmkfifo pipe\n\n# Lecture du contenu du pipe (processus A)\ncat pipe < pipe\n\n# Écriture dans le pipe (processus B)\necho \"Hello World\" > pipe\n\n# Lecture du contenu du pipe par processus A\ncat pipe < pipe\n\n# Création d'un socket pour la communication réseau\nncat -l -p 1234 & # écoute sur le port 1234\n```\n\nCONCEPT:\nPour utiliser les systèmes de commutation réseau, il faut comprendre comment se synchroniser les modifications entre deux processus. Cela nécessite la connaissance de systèmes tels que les fichiers système et les mécanismes de gestion des erreurs pour éviter les conflits.",
+  "situation": "Un serveur web utilise des clients pour envoyer des requêtes HTTP. Chaque client doit recevoir une réponse du serveur, ce qui nécessite la synchronisation entre le client et le serveur. La communication entre ces processus est essentielle pour assurer la disponibilité du service web. SITUATION: Un programme utilise un système de gestion de fichiers partagée pour stocker des données temporaires. Chaque partie du programme doit pouvoir accéder à ces données sans modifier les modifications apportées par l'autre partie du programme. La synchronisation des modifications entre les deux processus est essentielle pour garantir la cohérence des données. SITUATION: Un programme utilise un système de commutation réseau pour envoyer des fichiers vers un autre programme. L'erreur se produit lors de l'enregistrement d'un fichier, ce qui nécessite que le programme soit capable de gérer cette erreur en temps réel. SITUATION: Un programme utilise un système de commutation inter-processus (IPC) pour communiquer avec une autre partie du même programme. La synchronisation des modifications entre les deux processus est essentielle pour garantir la cohérence des données et éviter les conflits."
+}

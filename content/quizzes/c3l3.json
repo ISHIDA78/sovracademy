@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un CRL?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Révision des certificats",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Liste de revocation de certificats",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Certificat de revocation",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Certification de confiance",
+      "correct": false
+    }
+  ],
+  "explanation": "Un CRL (Certificate Revocation List) est une liste de certificats revocés"
+}

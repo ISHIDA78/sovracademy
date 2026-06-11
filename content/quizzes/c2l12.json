@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le rôle principal de l'outil 'grep' dans un fichier texte ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Rechercher une séquence dans tout le fichier",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Vérifier les permissions d'un fichier",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Trouver rapidement des mots ou des séquences spécifiques",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Voir le contenu du répertoire courant",
+      "correct": false
+    }
+  ],
+  "explanation": "Il permet de trouver rapidement les informations pertinentes dans un fichier texte."
+}

@@ -1,0 +1,26 @@
+{
+  "question": "Quel est le principal avantage du protocole TCP en matière de transmission de données ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Garantie d'arrivée des données",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Sécurité des informations",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Fiable et garantit l'intégrité",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Priorisation de la traitements",
+      "correct": false
+    }
+  ],
+  "explanation": "Le protocole TCP garantit fidèlement l'arrivée des données, assurant leur intégrité"
+}

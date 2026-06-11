@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que le hardening en sécurité défensive ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Réduction des vulnérabilités dans un système",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Méthode de sécurité basée sur la prévention",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Ajout de contrôles supplémentaires pour sécuriser le système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Gestion des certificats SSL/TLS",
+      "correct": false
+    }
+  ],
+  "explanation": "Sécurité contre les attaques en réduisant les vulnérabilités dans un système"
+}

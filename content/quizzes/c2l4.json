@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que Bash scripting permet d'automatiser principalement ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Tâches administratives",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Automatisation de scripts",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Gestion des erreurs système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Gestion de la sécurité",
+      "correct": false
+    }
+  ],
+  "explanation": "Les tâches répétitives et récurrentes"
+}

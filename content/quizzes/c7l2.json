@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que c'est une cgroup en Linux?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Gestion des groupes de ressources système",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Système d'exploitation open source",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Gestion des ressources du processus",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Langage de programmation C",
+      "correct": false
+    }
+  ],
+  "explanation": "Les cgroups permettent de limiter les ressources d'un processus"
+}

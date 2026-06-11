@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que NFTABLES ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Système de sécurité réseau basé sur les tables",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Tableau de contrôle du trafic réseau",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Protocole de communication réseau",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Système d'exploitation open source",
+      "correct": false
+    }
+  ],
+  "explanation": "NFTABLES est un système de sécurité réseau basé sur les tables"
+}

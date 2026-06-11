@@ -1,0 +1,26 @@
+{
+  "question": "Quelle est l'origine de Debian ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Distribution Linux open-source créée en France.",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Distribution Linux open-source créée par un groupe d'utilisateurs passionnés.",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Distribution Linux open-source créée par la communauté Linux.",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Distribution Linux open-source créée pour remplacer Windows.",
+      "correct": false
+    }
+  ],
+  "explanation": "Debian a été fondée en 1993 par Ian Murdock et une équipe de développeurs."
+}

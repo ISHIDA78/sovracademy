@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que Fish shell ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Un shell traditionnel",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Un shell de ligne de commande flexible et personnalisable",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Un shell Linux par défaut",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Un shell sur Windows",
+      "correct": false
+    }
+  ],
+  "explanation": "Fish est un shell de ligne de commande flexible et personnalisable."
+}

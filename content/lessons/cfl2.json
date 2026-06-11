@@ -1,0 +1,16 @@
+{
+  "concept": [
+    "Qu'est-ce que Init ?",
+    "Init est un programme qui reçoit les instructions de démarrage d'un système et les exécute.",
+    "Pourquoi ça existe, quel problème ça résout ?",
+    "Init permet au système de se réinitialiser en mémoire, de charger le noyau et les drivers nécessaires pour démarrer correctement.",
+    "Comment ça fonctionne en interne ?",
+    "Init est chargé dans le processus de démarrage du système, il lit les fichiers de configuration de démarrage (init.sys) et exécute les commandes pour initialiser les systèmes essentiels.",
+    "Ce qu'il faut absolument savoir en pratique",
+    "Le système doit être configuré pour que Init puisse trouver correctement le noyau et les drivers nécessaires pour démarrer.",
+    "Subtilités, pièges, cas avancés",
+    "Init peut prendre des erreurs si le fichier de configuration de démarrage est corrompu ou non exécutable."
+  ],
+  "code": "#!/bin/sh\n\n# Vérifie si un système d'exploitation est en cours de démarrage\nif [ -n \"$SYS_INIT\" ]; then\n    # Exécute les commandes pour initialiser les systèmes essentiels\n    echo \"Initialisation des systèmes essentiels...\"\n    init\nfi",
+  "situation": "Un administrateur système doit configurer Init pour que le système d'exploitation fonctionne correctement à la première démarrage, mais il remarque qu'un fichier de configuration de démarrage est malformé et ne peut pas être exécuté par Init."
+}

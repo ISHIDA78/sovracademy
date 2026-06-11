@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce qu'un buffer overflow en programmation?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Vulnérabilité due à une erreur de compilation",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Rupture des limites de pointeur causée par un programme malécuteur",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Type de faute de syntaxe dans le code",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Mécanisme de sécurité intégré aux systèmes d'exploitation",
+      "correct": false
+    }
+  ],
+  "explanation": "Un buffer overflow se produit lorsque le programme accepte plus de données qu'il n'en attend, causant une rupture des limites de pointeur."
+}

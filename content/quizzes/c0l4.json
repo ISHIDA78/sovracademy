@@ -1,0 +1,26 @@
+{
+  "question": "Qu'est-ce que le bus mémoire ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Un canal électrique permettant des transferts rapides",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Un ensemble de lignes permettant aux unités du système d'accéder au stockage",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Un système de gestion du stockage des données",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Une interface graphique pour les utilisateurs",
+      "correct": false
+    }
+  ],
+  "explanation": "La réponse est le bus mémoire, qui permet aux différentes unités du système d'accéder au stockage"
+}

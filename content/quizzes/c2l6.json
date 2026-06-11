@@ -1,0 +1,26 @@
+{
+  "question": "Quel système de gestion paquets utilise la commande 'pacman' pour instaler des logiciels sur Arch Linux ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Pierre",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Pacman",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Debian",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Red Hat",
+      "correct": false
+    }
+  ],
+  "explanation": "Le système de gestion paquets Arch Linux utilise Pacman."
+}
