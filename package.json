@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3003",
     "build": "next build",
-    "start": "next start -p 3003",
+    "start": "next start -p ${PORT:-3003}",
     "lint": "next lint",
     "seed": "npx tsx prisma/seed.ts",
     "generate": "npx tsx scripts/generate.ts",
