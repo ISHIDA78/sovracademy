@@ -11,6 +11,7 @@ type Phase =
   | 'reg_pass'
   | 'reg_confirm'
   | 'reg_email'
+  | 'forgot_input'
   | 'authenticating'
   | 'done'
 
@@ -83,10 +84,43 @@ export default function LoginPage() {
         addLine('  → Création de compte', 'c-blu')
         addLine('')
         setPhase('reg_user')
+      } else if (val === '101') {
+        addLine('')
+        addLine('  → Mot de passe oublié', 'c-blu')
+        addLine('  Pseudo ou email du compte :', 'c-dim')
+        addLine('')
+        setPhase('forgot_input')
+      } else if (val === '010') {
+        addLine('  [*] Opening https://sovr.fr ...', 'c-dim')
+        window.open('https://sovr.fr', '_blank', 'noopener')
+        setInputVal('')
+        setPhase('login')
+        setTimeout(() => inputRef.current?.focus(), 50)
       } else {
         setUsername(val.toLowerCase())
         setPhase('password')
       }
+      return
+    }
+
+    /* ── forgot password ── */
+    if (phase === 'forgot_input') {
+      addLine('  Pseudo / email : ' + val)
+      setInputVal('')
+      setPhase('authenticating')
+      addLine('  [*] Envoi en cours...', 'c-dim')
+      try {
+        await fetch('/api/forgot-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ identifier: val }),
+        })
+      } catch { /* ignore */ }
+      addLine('')
+      addLine('  Si un compte correspond, un email a été envoyé.', 'c-gry')
+      addLine('')
+      setPhase('login')
+      setTimeout(() => inputRef.current?.focus(), 50)
       return
     }
 
@@ -214,22 +248,24 @@ export default function LoginPage() {
   }
 
   const label: string =
-    phase === 'login'       ? 'sovr-academy login: '
-    : phase === 'password'  ? 'Password: '
-    : phase === 'reg_user'  ? '  New username: '
-    : phase === 'reg_pass'  ? '  New password: '
+    phase === 'login'         ? 'sovr-academy login: '
+    : phase === 'password'    ? 'Password: '
+    : phase === 'reg_user'    ? '  New username: '
+    : phase === 'reg_pass'    ? '  New password: '
     : phase === 'reg_confirm' ? '  Confirm password: '
-    : phase === 'reg_email' ? '  Email: '
+    : phase === 'reg_email'   ? '  Email: '
+    : phase === 'forgot_input'? '  Pseudo / email : '
     : ''
 
   const masked = phase === 'password' || phase === 'reg_pass' || phase === 'reg_confirm'
   const active = phase !== 'authenticating' && phase !== 'booting' && phase !== 'done'
 
   const hint: string | null =
-    phase === 'login'      ? '  ╌╌  pseudo 00 → créer un compte  ╌╌'
-    : phase === 'reg_user' ? '  minuscules, chiffres, _ ou -  (3–24 chars)'
-    : phase === 'reg_pass' ? '  minimum 6 caractères'
-    : phase === 'reg_email'? '  optionnel — Entrée pour passer'
+    phase === 'login'         ? '  ╌╌  00 créer un compte · 101 mdp oublié · 010 sovr.fr  ╌╌'
+    : phase === 'reg_user'    ? '  minuscules, chiffres, _ ou -  (3–24 chars)'
+    : phase === 'reg_pass'    ? '  minimum 6 caractères'
+    : phase === 'reg_email'   ? '  optionnel — Entrée pour passer'
+    : phase === 'forgot_input'? '  pseudo ou adresse email du compte'
     : null
 
   void newEmail // used in fetch body

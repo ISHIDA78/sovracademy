@@ -1,26 +1,15 @@
 {
-  "question": "Qu'est-ce que Bash scripting permet d'automatiser principalement ?",
-  "options": [
-    {
-      "key": "A",
-      "label": "Tâches administratives",
-      "correct": false
-    },
-    {
-      "key": "B",
-      "label": "Automatisation de scripts",
-      "correct": true
-    },
-    {
-      "key": "C",
-      "label": "Gestion des erreurs système",
-      "correct": false
-    },
-    {
-      "key": "D",
-      "label": "Gestion de la sécurité",
-      "correct": false
-    }
+  "type": "fix",
+  "scenario": "Ce script bash est censé afficher tous les fichiers .log\nde /var/log de manière récursive.\nIl ne fonctionne pas — corrige la commande.",
+  "context": {
+    "fakeOutput": "$ find /var/log -name *.log\nfind: paths must precede expression: `auth.log'\nTry 'find --help' for more information."
+  },
+  "accept": [
+    "^find\\s+/var/log\\s+-name\\s+['\"]\\*\\.log['\"]$",
+    "^find\\s+/var/log\\s+-name\\s+'\\*\\.log'$",
+    "^find\\s+/var/log\\s+-name\\s+\"\\*\\.log\"$"
   ],
-  "explanation": "Les tâches répétitives et récurrentes"
+  "hint": "Le glob *.log doit être protégé des expansions du shell avec des guillemets",
+  "explanation": "Sans guillemets, le shell expanse *.log avant que find le reçoive. Toujours quoter les patterns find.",
+  "xp": 22
 }

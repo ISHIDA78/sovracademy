@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import Banner from '@/components/Banner'
 import DynamicLesson from '@/components/DynamicLesson'
 import { CUR, unlocked, rank } from '@/lib/curriculum'
+import type { ExerciseCmdHandler } from '@/lib/exercise'
 
 /* ─── types ─── */
 interface Item { id: number; node: React.ReactNode }
@@ -40,14 +41,16 @@ function resolveCd(arg: string): string | null {
 
 /* ─── autocomplete ─── */
 const GLOBAL_CMDS = ['ls', 'cd', 'start', 'next', 'back', 'b', 'score', 's', 'help', 'h', 'clear', 'exit', 'logout', 'poweroff', 'q']
+const EXERCISE_CMDS = ['hint', 'submit']
 const CD_TARGETS = ['..', '~', ...CUR.map(c => c.id),
   'cpu', 'os', 'linux', 'terminal', 'tmux', 'vim', 'crypto', 'reseau', 'rust', 'c', 'asm', 'offensive', 'defensive', 'final']
 
-function getCompletions(input: string): string[] {
+function getCompletions(input: string, inExercise = false): string[] {
   const trimmed = input.trimStart()
   const parts = trimmed.split(/\s+/)
+  const cmds = inExercise ? [...GLOBAL_CMDS, ...EXERCISE_CMDS] : GLOBAL_CMDS
   if (parts.length === 1 && !trimmed.endsWith(' ')) {
-    return GLOBAL_CMDS.filter(c => c.startsWith(parts[0])).slice(0, 8)
+    return cmds.filter(c => c.startsWith(parts[0])).slice(0, 8)
   }
   if (parts[0] === 'cd' && parts.length <= 2 && !trimmed.endsWith('  ')) {
     const prefix = parts[1] ?? ''
@@ -85,6 +88,8 @@ export default function AppPage() {
   const outputRef = useRef<HTMLDivElement>(null)
   const inputRef  = useRef<HTMLInputElement>(null)
   const counter   = useRef(0)
+  const exerciseCmdRef = useRef<ExerciseCmdHandler | null>(null)
+  const setExerciseCmd = useCallback((h: ExerciseCmdHandler | null) => { exerciseCmdRef.current = h }, [])
 
   useEffect(() => { if (status === 'unauthenticated') router.replace('/login') }, [status, router])
 
@@ -255,6 +260,7 @@ export default function AppPage() {
           onGainXP={gainXP}
           onComplete={completeLesson}
           scrollBottom={scrollBottom}
+          onSetExerciseCmd={setExerciseCmd}
         />
         <span className="ln pre">{' '}</span>
         <span className="ln pre">
@@ -324,6 +330,15 @@ export default function AppPage() {
         <span className="c-wht">{raw}</span>
       </span>
     )
+
+    // ── Exercise mode: route command to active exercise handler ──
+    if (exerciseCmdRef.current && low !== 'b' && low !== 'back' && low !== 'exit' && low !== 'logout' && low !== 'poweroff' && low !== 'quit' && low !== 'q') {
+      const result = exerciseCmdRef.current(raw)
+      addItems(echo, ...result.lines)
+      if (result.done) exerciseCmdRef.current = null
+      scrollBottom()
+      return
+    }
 
     // cd command (domain switch)
     if (parts[0] === 'cd') {
@@ -474,7 +489,7 @@ export default function AppPage() {
     // Tab autocomplete
     if (e.key === 'Tab') {
       e.preventDefault()
-      const comps = getCompletions(cmdInput)
+      const comps = getCompletions(cmdInput, !!exerciseCmdRef.current)
       if (comps.length === 0) { setCompletions([]); return }
       if (comps.length === 1) {
         const parts = cmdInput.trimStart().split(/\s+/)

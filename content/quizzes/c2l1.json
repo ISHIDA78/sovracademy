@@ -1,26 +1,13 @@
 {
-  "question": "Qu'est-ce que le système de fichiers est en Linux, et quel problème résout-il ?",
-  "options": [
-    {
-      "key": "A",
-      "label": "Résolve les problèmes de stockage",
-      "correct": false
-    },
-    {
-      "key": "B",
-      "label": "Gère les droits d'accès des utilisateurs",
-      "correct": true
-    },
-    {
-      "key": "C",
-      "label": "Stocke et organise les fichiers du système",
-      "correct": false
-    },
-    {
-      "key": "D",
-      "label": "Assure la sécurité des données en stockage",
-      "correct": false
-    }
+  "type": "cmd",
+  "scenario": "Tu es sur un serveur Arch Linux.\nListe les fichiers cachés du répertoire courant\nen affichant également les droits (format long).",
+  "accept": [
+    "^ls\\s+-la$",
+    "^ls\\s+-al$",
+    "^ls\\s+--all\\s+-l$",
+    "^ls\\s+-l\\s+-a$"
   ],
-  "explanation": "Gère les droits d'accès des utilisateurs pour protéger les fichiers du système."
+  "hint": "ls supporte les flags combinés : ls -la",
+  "explanation": "ls -la combine -l (format long) et -a (fichiers cachés, préfixés par un point).",
+  "xp": 20
 }

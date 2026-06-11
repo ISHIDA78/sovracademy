@@ -1,26 +1,15 @@
 {
-  "question": "Qu'est-ce que NFTABLES ?",
-  "options": [
-    {
-      "key": "A",
-      "label": "Système de sécurité réseau basé sur les tables",
-      "correct": false
-    },
-    {
-      "key": "B",
-      "label": "Tableau de contrôle du trafic réseau",
-      "correct": true
-    },
-    {
-      "key": "C",
-      "label": "Protocole de communication réseau",
-      "correct": false
-    },
-    {
-      "key": "D",
-      "label": "Système d'exploitation open source",
-      "correct": false
-    }
+  "type": "analyze",
+  "scenario": "Analyse cette sortie ss -tlnp.\nQuel port est en écoute par un processus suspect (PID > 9000) ?",
+  "context": {
+    "fakeOutput": "State   Recv-Q  Send-Q  Local Address:Port  Peer Address:Port  Process\nLISTEN  0       128     0.0.0.0:22         0.0.0.0:*          users:((\"sshd\",pid=412,fd=3))\nLISTEN  0       128     0.0.0.0:80         0.0.0.0:*          users:((\"nginx\",pid=831,fd=6))\nLISTEN  0       512     0.0.0.0:4444       0.0.0.0:*          users:((\"nc\",pid=9731,fd=4))\nLISTEN  0       128     0.0.0.0:443        0.0.0.0:*          users:((\"nginx\",pid=831,fd=7))"
+  },
+  "accept": [
+    "^4444$",
+    "^port\\s+4444$",
+    "^:4444$"
   ],
-  "explanation": "NFTABLES est un système de sécurité réseau basé sur les tables"
+  "hint": "Cherche le PID le plus élevé et regarde son port",
+  "explanation": "nc (netcat) sur le port 4444 avec PID 9731 — typique d'un reverse shell.",
+  "xp": 25
 }

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
 import { prisma } from '@/lib/prisma'
+import { sendWelcomeEmail, sendRegistrationNotice } from '@/lib/mailer'
 
 export async function POST(req: Request) {
   const { username, password, email } = await req.json() as { username: string; password: string; email?: string }
@@ -28,5 +29,12 @@ export async function POST(req: Request) {
 
   const hash = await bcrypt.hash(password, 10)
   await prisma.user.create({ data: { username, password: hash, email: normalEmail } })
+
+  // Emails fire-and-forget — ne bloquent jamais l'inscription
+  Promise.allSettled([
+    normalEmail ? sendWelcomeEmail(username, normalEmail) : Promise.resolve(),
+    sendRegistrationNotice(username, normalEmail),
+  ]).catch(() => {})
+
   return NextResponse.json({ ok: true })
 }

@@ -1,26 +1,45 @@
 {
-  "question": "Qu'est-ce que le rôle principal de Tmux dans la gestion des sessions de terminal ?",
-  "options": [
-    {
-      "key": "A",
-      "label": "Gérer les fenêtres et panneaux",
-      "correct": false
-    },
-    {
-      "key": "B",
-      "label": "Ouvrir et gérer plusieurs sessions simultanément",
-      "correct": true
-    },
-    {
-      "key": "C",
-      "label": "Créer des sauvegardes automatiques",
-      "correct": false
-    },
-    {
-      "key": "D",
-      "label": "Gérer les permissions des utilisateurs",
-      "correct": false
+  "type": "flag",
+  "scenario": "Un administrateur distrait a laissé un flag dans son homedir.\nExplore le filesystem et soumets-le.",
+  "context": {
+    "fs": {
+      "type": "dir",
+      "children": {
+        "home": {
+          "type": "dir",
+          "children": {
+            "admin": {
+              "type": "dir",
+              "children": {
+                ".bash_history": {
+                  "type": "file",
+                  "content": "ls -la\ncat notes.txt\necho 'SOVR{tmux_s3ss10n_h1j4ck}' | base64 > .secret\nrm notes.txt"
+                },
+                ".secret": {
+                  "type": "file",
+                  "content": "U09WUnt0bXV4X3Mzc3MxMG5faDFqNGNrfQo="
+                },
+                ".tmux.conf": {
+                  "type": "file",
+                  "content": "set -g prefix C-a\nbind r source-file ~/.tmux.conf"
+                }
+              }
+            }
+          }
+        },
+        "etc": {
+          "type": "dir",
+          "children": {
+            "hostname": { "type": "file", "content": "sovr-academy" }
+          }
+        }
+      }
     }
+  },
+  "accept": [
+    "^SOVR\\{tmux_s3ss10n_h1j4ck\\}$"
   ],
-  "explanation": "L'option B est la bonne réponse car Tmux permet de gérer plusieurs sessions concurrentes"
+  "hint": "Explore les fichiers cachés dans /home/admin — base64 -d peut aider",
+  "explanation": "Le flag était encodé en base64 dans /home/admin/.secret. base64 -d .secret le révèle.",
+  "xp": 40
 }

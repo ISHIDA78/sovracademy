@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import QCM from './QCM'
-import { type QuizContent } from '@/lib/ollama'
+import ExerciseEngine from './ExerciseEngine'
+import type { ExerciseContent, ExerciseCmdHandler } from '@/lib/exercise'
 
 interface Props {
   cid: string
@@ -11,20 +11,21 @@ interface Props {
   onGainXP: (n: number) => void
   onComplete: (cid: string, lid: string) => void
   scrollBottom: () => void
+  onSetExerciseCmd: (handler: ExerciseCmdHandler | null) => void
 }
 
 type Phase = 'fetching' | 'animating' | 'code' | 'situation' | 'quiz' | 'done'
 
 const SPINNER = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
 
-export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onComplete, scrollBottom }: Props) {
+export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onComplete, scrollBottom, onSetExerciseCmd }: Props) {
   const [phase, setPhase]         = useState<Phase>('fetching')
   const [spinIdx, setSpinIdx]     = useState(0)
   const [elapsed, setElapsed]     = useState('0.0')
   const [conceptLines, setConceptLines] = useState<string[]>([])
   const [code, setCode]           = useState('')
   const [situation, setSituation] = useState('')
-  const [quiz, setQuiz]           = useState<QuizContent | null>(null)
+  const [exercise, setExercise]   = useState<ExerciseContent | null>(null)
   const [revealed, setRevealed]   = useState(0)
   const startRef  = useRef(Date.now())
   const animated  = useRef(false)
@@ -51,14 +52,12 @@ export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onCompl
         const res = await fetch(`/api/lesson?cid=${cid}&lid=${lid}&xp=${xp}`)
         if (!res.ok) throw new Error('API error')
 
-        /* JSON (cached) path */
         if (res.headers.get('content-type')?.includes('application/json')) {
           const d = await res.json() as { concept: string[]; code: string; situation: string }
           if (!cancelled.current) { setConceptLines(d.concept); setCode(d.code); setSituation(d.situation) }
           return
         }
 
-        /* Streaming path: accumulate and wait for PARSED marker */
         const reader = res.body!.getReader()
         const dec = new TextDecoder()
         let buf = ''
@@ -72,11 +71,7 @@ export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onCompl
           if (markerIdx >= 0) {
             try {
               const parsed = JSON.parse(buf.slice(markerIdx + 8)) as { concept: string[]; code: string; situation: string }
-              if (!cancelled.current) {
-                setConceptLines(parsed.concept)
-                setCode(parsed.code)
-                setSituation(parsed.situation)
-              }
+              if (!cancelled.current) { setConceptLines(parsed.concept); setCode(parsed.code); setSituation(parsed.situation) }
             } catch { /* ignore partial */ }
             break
           }
@@ -116,9 +111,7 @@ export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onCompl
           setTimeout(() => {
             if (cancelled.current) return
             setPhase('situation'); scrollBottom()
-            setTimeout(() => {
-              if (!cancelled.current) loadQuiz()
-            }, 400)
+            setTimeout(() => { if (!cancelled.current) loadExercise() }, 400)
           }, 500)
         }, 150)
       }
@@ -127,12 +120,12 @@ export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onCompl
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [conceptLines])
 
-  const loadQuiz = async () => {
+  const loadExercise = async () => {
     try {
       const res = await fetch(`/api/quiz?cid=${cid}&lid=${lid}`)
       if (!res.ok) throw new Error()
-      const q = await res.json() as QuizContent
-      if (!cancelled.current) { setQuiz(q); setPhase('quiz'); scrollBottom() }
+      const data = await res.json() as ExerciseContent
+      if (!cancelled.current) { setExercise(data); setPhase('quiz'); scrollBottom() }
     } catch {
       if (!cancelled.current) { setPhase('done'); scrollBottom() }
     }
@@ -145,7 +138,7 @@ export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onCompl
       {/* ── Loading spinner ── */}
       {phase === 'fetching' && (
         <span className="ln pre c-blu">
-          {'  [*] Generating with llama3.2... '}
+          {'  [*] Chargement... '}
           <span className="c-grn">{SPINNER[spinIdx]}</span>
           <span className="c-dim">{' ' + elapsed + 's'}</span>
         </span>
@@ -188,33 +181,23 @@ export default function DynamicLesson({ cid, lid, xp, totalXP, onGainXP, onCompl
         </>
       )}
 
-      {/* ── QCM loading ── */}
+      {/* ── Exercise loading ── */}
       {phase === 'situation' && (
-        <span className="ln pre c-gry">{'  [*] Generating quiz... '}<span className="c-grn">{SPINNER[spinIdx % SPINNER.length]}</span></span>
+        <span className="ln pre c-gry">{'  [*] Chargement exercice... '}<span className="c-grn">{SPINNER[spinIdx % SPINNER.length]}</span></span>
       )}
 
-      {/* ── QCM ── */}
-      {(phase === 'quiz' || phase === 'done') && quiz && (
-        <>
-          <span className="ln pre">{' '}</span>
-          <QCM
-            header="QCM — généré par IA"
-            question={quiz.question}
-            options={quiz.options}
-            xpReward={Math.round(totalXP / 3)}
-            onComplete={xpGained => {
-              onGainXP(xpGained)
-              onComplete(cid, lid)
-              setPhase('done')
-              if (quiz.explanation) scrollBottom()
-            }}
-          />
-          {phase === 'done' && quiz.explanation && (
-            <span className="ln pre c-dim" style={{ paddingLeft: '8px' }}>
-              {'  ℹ  ' + quiz.explanation}
-            </span>
-          )}
-        </>
+      {/* ── Exercise (QCM ou interactif) ── */}
+      {(phase === 'quiz' || phase === 'done') && exercise && (
+        <ExerciseEngine
+          exercise={exercise}
+          cid={cid}
+          lid={lid}
+          lessonXP={totalXP}
+          onGainXP={onGainXP}
+          onComplete={(c, l) => { onComplete(c, l); setPhase('done') }}
+          scrollBottom={scrollBottom}
+          onSetExerciseCmd={onSetExerciseCmd}
+        />
       )}
     </div>
   )
