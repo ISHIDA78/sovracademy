@@ -36,3 +36,9 @@ yarn-error.log*
 next-env.d.ts
 
 /app/generated/prisma
+
+# SQLite — jamais committer la DB
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
