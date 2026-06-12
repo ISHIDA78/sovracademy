@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le mécanisme interne utilisé pour séquencer les instructions dans une machine à ordinateur?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Réalisation de pipeline",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Régression à un état d'artérieur",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Vérification des instructions",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Réalisation de pipeline à plusieurs étapes",
+      "correct": false
+    }
+  ],
+  "explanation": "Le séquencement d'instructions pour améliorer la performance"
+}

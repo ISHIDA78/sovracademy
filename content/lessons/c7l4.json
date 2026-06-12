@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "L'exploitation du tas (heap) consiste à manipuler les mémoires d'une machine pour effectuer des attaques",
+    "Cette approche résout le problème de l'exécution d'applications vulnérables aux erreurs de gestion de la mémoire",
+    "Le mécanisme interne consiste en la gestion de la pile et des pointeurs vers des adresses mémoire",
+    "En pratique, il faut connaître les structures kernel et leurs utilisations pour identifier les vulnérabilités",
+    "L'exploitation du tas est liée à la sécurité offensive, dans le contexte de la sécurité informatique",
+    "Un piège important est de ne pas oublier que l'exécution d'applications peut être influencée par les conditions initiales"
+  ],
+  "code": "",
+  "situation": "Une application web vulnérable à l'exécution d'applications est utilisée pour stocker des données sensibles, comme un mot de passe. Un attaquant utilise la technique de buffer overflow sur le tas pour exécuter du code malveillant."
+}

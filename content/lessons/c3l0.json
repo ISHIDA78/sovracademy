@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Chiffrer c'est masquer un texte pour qu'il ne puisse pas être lu sans la clé.",
+    "Il résout le problème du secret : protéger des informations sensibles contre les attaquants",
+    "Un algorithme de chiffrement transforme le texte en un code ininterprétable sans connaissance de la clé.",
+    "Dans la pratique, cela signifie que même si l'attaquant obtient une copie du texte crypté, il ne peut pas le déchiffrer sans la clé.",
+    "L'algorithme de chiffrement est un élément essentiel en sécurité informatique"
+  ],
+  "code": "",
+  "situation": "Un employé de banque reçoit un e-mail contenant des informations sensibles sur un compte client. Il a la possibilité d'ouvrir l'e-mail pour lire les informations ou de l'envoyer à un autre destinataire"
+}

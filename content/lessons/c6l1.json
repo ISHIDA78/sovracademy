@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition du concept d'ownership en Rust",
+    "Résoud le problème de la gestion des ressources en C++",
+    "Mécanisme interne : les references smart pointeurs",
+    "Ce qu'il faut savoir pour éviter les erreurs de borrowing",
+    "Lien avec la sécurité offensive : trouver les vulnerabilités",
+    "Piège important : les bugs de borrow checker"
+  ],
+  "code": "",
+  "situation": "Un exploit de sécurité basé sur la gestion des ressources dans un programme Rust, qui consiste à exploiter les erreurs de borrow checker pour accéder à des données sensibles."
+}

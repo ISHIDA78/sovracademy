@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "L' Swap est une fonction pour charger les pages de piste supplémentaire en mémoire physique.",
+    "Pour éviter l'épuisement des fichiers disques, le système utilise le swap pour stocker temporairement les données non utilisées",
+    "Le mécanisme interne consiste à utiliser la page table pour créer une liste des pages allouées physiquement et en piste supplémentaire.",
+    "En pratique, il faut être conscient du volume de swap activé et réguler le serveur pour éviter l'épuisement du disque.",
+    "Dans le contexte de sécurité, les attaques par overflow peuvent exploser contre un système peu vigilant concernant ses pages de piste supplémentaire",
+    "Une bonne gestion des paramètres swap et limites d'adresse RAM peut empêcher des attaques spécifiques de type Denial of Service (DoS)"
+  ],
+  "code": "",
+  "situation": "L'attaque par overflow est un exemple d'exploitation où l'utilisation d'une grande quantité de swap et de mémoire peut être exploitée"
+}

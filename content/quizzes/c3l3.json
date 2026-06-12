@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Recherchez la valeur de hash utilisée par la fonction `echo -n 'chaine_de_hachage' | sha256sum` pour crypter une chaîne de texte.",
+  "context": {
+    "fakeOutput": "la commande sha256sum a été exécutée avec succès et une chaîne de hachage de 64 octets a été générée : 315f5bdb76c1ba7b8c454e4..."
+  },
+  "accept": [
+    "^315f5bdb76c1ba7b8c454e4$"
+  ],
+  "hint": "Regardez la ligne de sortie qui contient le mot 'sha256sum' pour trouver la valeur de hachage.",
+  "explanation": "La valeur de hash est importante car elle permet de vérifier l'intégrité d'une chaîne de texte et prévenir les attaques par collision de chaînes de hashes."
+}

@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Une ligne de route est comme une carte du filesystem : il faut savoir où aller pour y arriver",
+    "Pourquoi ça existe ? Le filesystem permet de stocker et de récupérer des fichiers sur le disque dur, ce qui est essentiel pour l'accès à l'information.",
+    "Mécanisme interne concret : les fichiers sont organisés en répertoires (dossier) et liens symboliques (symlink), tout comme nous organisons nos dossiers dans un maison avec des étiquettes et des liens entre eux.",
+    "En pratique, apprendre à naviguer dans le filesystem permet de comprendre comment les fichiers sont stockés et comment ils peuvent être modifiés pour être plus sécurisés ou plus efficaces.",
+    "Liaison avec la sécurité offensive ou défensive : un hacker peut utiliser son savoir-faire sur le filesystem pour trouver des failles dans l'organisation des fichiers et exploiter ces vulnérabilités, tandis qu'un défenseur peut utiliser le même savoir-faire pour mettre en place des mesures de sécurité plus robustes.",
+    "Piège ou subtilité importante : ne jamais oublier d'avoir les droits de lecture (r) sur un fichier avant de vouloir l'exécuter (ce qui est souvent le cas avec les fichiers exécutables)."
+  ],
+  "code": "",
+  "situation": "Un hacker essaie de trouver un chemin pour accéder à des informations sensibles sur une machine Linux, alors qu'un défenseur de sécurité doit mettre en place des mesures de sécurité efficaces pour empêcher ces tentatives d'intrusion."
+}

@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "L'init est le premier point de contact du système pour les programmes",
+    "Résolve les problèmes initiaux lors du démarrage du système (création des disques, insertion du répertoire racine)",
+    "Mécanisme interne : initialisation des variables globales via l'appel d'une fonction système",
+    "En pratique : utiliser syscalls appropriées pour les tâches de démarrage, exemple avec 'init()' dans le code",
+    "Lien avec la sécurité offensive : si la fonction init est vulnérable à une attaque, celle-ci peut être utilisée pour lancer des attaques système.",
+    "Piège important : si la fonction init contient des variables statiques non initialisées, elle peut contenir des données sensibles accessible aux attackers."
+  ],
+  "code": "",
+  "situation": "L'attaque commence avec une tentative de crash du système via un bug dans la fonction init() lorsqu'elle tente d'instantier le répertoire racine."
+}

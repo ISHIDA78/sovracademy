@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "CA : Certificat d'authenticité",
+    "Résout le problème de la confiance dans les communications en ligne",
+    "Mécanisme interne : le certificat est signé par un CA réputé",
+    "En pratique, vérifier l'expérience et la signature du CA",
+    "Lien avec la sécurité offensive : attaquer un CA pour compromettre toute la chaîne de confiance",
+    "Piège : ne pas vérifier le certificat d'un site, alors qu'il est facile à fabriquer"
+  ],
+  "code": "# Exemple de vérification d'un certificat\n# avec OpenSSL et OpenSSL 1.1.1k\n\nopenssl s_client -connect example.com:443 -verify\n\nevénement='rootCA', DN='{CN=Root CA,OU=Certifikat,DC=com}'\n\nevénement='example.com', DN='{CN=Serveur Web,OU=Services Web,DC=com}'\n\n# Si le certificat est valide, on obtient un événement 'trusted'",
+  "situation": "Un employé de banque utilise un site web pour vérifier son compte, mais l'entreprise utilise un CA peu réputé. L'attaquant a créé un certificat similaire pour tromper le navigateur."
+}

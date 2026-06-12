@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Le processus de lecteur/initi est basé sur lequel mécanisme?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Mécanisme de lecture par blocs",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Mécanisme de lecteur/mémorisation",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Mécanisme de lecture en continu",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Mécanisme de lecture en parallèle",
+      "correct": false
+    }
+  ],
+  "explanation": "Le processus de lecteur/initi est basé sur le mécanisme de lecture/mémorisation."
+}

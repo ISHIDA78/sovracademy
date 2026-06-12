@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition d'une fonction système",
+    "Résoudre le problème du retour incorrect des valeurs de système",
+    "Mécanisme interne : appel de syscall avec code spécifique et adresse de réponse",
+    "En pratique : utiliser l'instruction sysenter pour appeler les systèmes",
+    "Liaison avec la sécurité offensive : échapper aux limitations d'appel direct sur des fonctions système",
+    "Piège important : utiliser l'assembly pour créer un appel indirect via le registre EDI"
+  ],
+  "code": "",
+  "situation": ""
+}

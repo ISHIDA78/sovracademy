@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Recherche de texte dans un fichier",
+    "Rappel : à la vie quotidienne, tu cherches souvent des documents ou des lettres dans ton bureau ou tes dossiers. Le grep nous permet de faire de même avec les fichiers du système.",
+    "Mécanisme interne : le grep lit le contenu d'un fichier et utilise une expression régulière pour trouver des mots spécifiques.",
+    "En pratique : utilisation du commande `grep` avec une expression régulière, comme `grep 'mot-clé' fichier.txt`.",
+    "Avantage en sécurité défensive : détecter les tentatives de vol d'identité ou de mot de passe à l'aide de mots-clés spécifiques."
+  ],
+  "code": "",
+  "situation": "Un hacker essaie de trouver un mot de passe stocké dans un fichier texte. Tu utilises grep pour détecter la tentative et empêcher l'accès."
+}

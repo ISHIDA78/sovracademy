@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Une fonction est comme un menu de restaurant. Vous choisissez ce que vous voulez manger, le serveur prépare selon vos souhaits.",
+    "Fonctions existent pour simplifier les tâches répétitives et réduire l'erreur manuelle. Cela permet une utilisation efficace du temps.",
+    "Une fonction est définie par un ensemble d'instructions qui prennent en entrée des données, procèdent à des opérations et renvoient des résultats.",
+    "Pour utiliser les fonctions, vous devez passer les arguments (les données) entre parenthèses. Les fonctions peuvent également prendre des références aux variables comme argument.",
+    "En sécurité, les fonctions sont utiles pour encapsuler les codes sensibles et éviter les injections de code. Les hackers essaient souvent d'évader ces contrôles.",
+    "Soit vous utilisez une fonction incorrectement soit vous êtes trompé par votre environnement, il est important d'être vigilant lors de l'utilisation des fonctions."
+  ],
+  "code": "",
+  "situation": ""
+}

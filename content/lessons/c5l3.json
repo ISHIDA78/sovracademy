@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition : Interruptions (ou interrupts) sont des signaux envoyés par le système pour interrompre l'exécution d'un programme ou de la pipeline CPU.",
+    "Raison : Pour gérer les événements imprévus, tel que la fin de mémoire ou des erreurs système, les interruptions permettent au système de s'adapter et de continuer à fonctionner.",
+    "Mécanisme interne : Les interruptions sont généralement gérées par un registre spécialisé (par exemple, `eip` pour l'adresse instruction pointée) et un code d'interruption spécifique.",
+    "Ce qu'il faut savoir en pratique : Pour gérer les interruptions correctement, il faut bien comprendre comment elles sont gérées dans le système et comment les identifier et traiter les signaux.",
+    "Lien avec la sécurité offensive ou défensive : Les interruptions peuvent être utilisées par des attaques pour perturber l'exécution d'un programme ou pour désamorcer un vulnérabilité de sécurité.",
+    "Piège ou subtilité importante : L'utilisation abusive des interruptions peut entraîner la création de faux endroits (FAUs), qui peuvent être difficiles à détecter et à corrigérer."
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise une interruption pour perturber l'exécution d'un programme système, en déclenchant un exception de type fault, permettant ainsi à son exploit de désamorcer un vulnérabilité de sécurité dans le système."
+}

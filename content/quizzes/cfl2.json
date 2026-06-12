@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le mécanisme interne utilisé pour initialiser les registres et les structures du système ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Initialisation par copie",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Initialisation par assignation",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Initialisation par réinitialisation",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Initialisation par mise à jour",
+      "correct": false
+    }
+  ],
+  "explanation": "L'initialisation par assignation permet une gestion plus efficace des ressources."
+}

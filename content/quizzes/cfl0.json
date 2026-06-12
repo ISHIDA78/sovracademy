@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Comment GRUB lit son fichier de configuration ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Par un appel système",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Par répertoire d'origine",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "En lecture seule",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Sur le disque",
+      "correct": false
+    }
+  ],
+  "explanation": "Lancement du système"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le modèle utilisé pour identifier les attaques potentielles dans un système ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Threat modeling",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "STRIDE",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "ATP",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "VULN",
+      "correct": false
+    }
+  ],
+  "explanation": "Le modèle STRIDE (Spoofing, Tailoring, Repudiation, Deception, Impersonation)"
+}

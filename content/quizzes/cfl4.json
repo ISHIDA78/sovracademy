@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le rôle principal d'un système de shell dans Userland ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Interpréter des commandes",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Gérer les données",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Réaliser des tâches en parallèle",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Créer une interface utilisateur",
+      "correct": false
+    }
+  ],
+  "explanation": "L'utilisateur ne nécessite pas d'intervention directe du kernel pour exécuter les commandes"
+}

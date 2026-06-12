@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Une attaque side-channel est une faiblesse dans un système qui permet à l'attaquant d'extraire des informations sensibles sans avoir accès direct aux données.",
+    "Ces attaques peuvent être utilisées pour déterminer les paramètres de cryptographie, comme la clé ou le mode de fonctionnement, même si la clé est protégée par une méthode de cryptage forte.",
+    "Mécanisme interne : dans un système de chiffrement asymétrique (par exemple RSA), les attaques side-channel peuvent être utilisées pour déterminer la clé privée à partir des messages de signature reçus. Ce sont souvent connues sous le nom d'attaques non-interactive.",
+    "Pratique : lors de l'utilisation de protocoles de cryptage comme TLS, les attaques side-channel peuvent être utilisées pour déterminer la clé de chiffrement à partir des messages de synchronisation reçus. Cela peut permettre à l'attaquant d'accéder aux données sensibles sans avoir accès direct à la clé.",
+    "Lien avec la sécurité offensive ou défensive : les attaques side-channel sont souvent considérées comme une menace pour la sécurité des systèmes et des réseaux, car elles peuvent être utilisées pour exploiter des faiblesses dans le système sans avoir accès direct à la clé ou aux données.",
+    "Piège ou subtilité importante : les attaques side-channel peuvent être très difficiles à détecter, car elles ne nécessitent pas d'accès direct aux données ou à la clé. Elles peuvent également être utilisées pour détérminer les paramètres de cryptographie sans avoir accès direct aux messages de cryptage."
+  ],
+  "code": "",
+  "situation": "Un client web reçoit une signature RSA à partir d'un serveur distant. L'attaquant veut déterminer la clé privée du serveur sans avoir accès direct à celle-ci."
+}

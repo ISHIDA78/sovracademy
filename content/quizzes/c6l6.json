@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quelle est la convention utilisée pour passer des arguments aux fonctions système ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "par référence",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "par valeur",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "par adresse de mémoire",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "par port",
+      "correct": false
+    }
+  ],
+  "explanation": "Le calling convention spécifie comment passer les arguments aux fonctions système"
+}

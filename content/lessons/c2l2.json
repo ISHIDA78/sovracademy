@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "ARP : Answer Record dans DNS",
+    "Pourquoi ça existe : éviter les collisions d'adresses IP",
+    "Mécanisme interne : requête ARP envoyée sur le réseau, réponse DNS renvoyée avec l'adresse IP de destination",
+    "Ce qu'il faut savoir en pratique : utiliser ARP pour résoudre les noms de domaine en IP",
+    "Lien avec la sécurité offensive : attaques ARP spoofing",
+    "Piège ou subtilité importante : utiliser le TTL (Time To Live) des requêtes ARP pour détecter les attaques"
+  ],
+  "code": "",
+  "situation": "Un attaquant espère être en mesure d'envoyer une requête ARP spoofée pour obtenir les adresses IP des systèmes sur le réseau, puis utiliser ces informations pour effectuer des attaques de phishing ou de ransomware."
+}

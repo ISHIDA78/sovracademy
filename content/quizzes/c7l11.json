@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Qu'est-ce que l'IDS/IPS ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Défense active",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Système de surveillance",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Logiciel d'attaque",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Vérification de la sécurité",
+      "correct": false
+    }
+  ],
+  "explanation": "Système de surveillance réseau pour détecter activités malveillantes"
+}

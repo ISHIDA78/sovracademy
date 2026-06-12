@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Analyse de malware : détection et compréhension des mécanismes d'execution",
+    "Pour résoudre les problèmes liés à la propagation et à l'infection des systèmes par des logiciels malveillants.",
+    "Mécanisme interne concret : lecture du code source, analyse des registres de système (registers), syscall numbers, structures kernel",
+    "En pratique, il faut connaître les patterns d'execution, les flags de sécurité et les outils d'analyse spécifiques à chaque système.",
+    "Lien avec la sécurité offensive : compréhension des techniques d'exploitation pour détecter les pièges de malware, Lien avec la sécurité défensive : mise en place de medidas de hardening pour prévenir les attaques.",
+    "Piège ou subtilité importante : utiliser des outils comme Anubis ou BinaryNinja pour analyser et comprendre le comportement du malware."
+  ],
+  "code": "",
+  "situation": "Un administrateur système remarque des anomalies étranges sur un serveur et détermine que le système a été infecté par un logiciel malveillant."
+}

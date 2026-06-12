@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez le fichier avec le nom 'secure' dans la liste des fichiers du répertoire '/'",
+  "context": {
+    "fakeOutput": "dossier : / \n\t-rwxr-x--- 1 root root     0 Janv 1 00:00 secure.txt\n\t-rw------- 1 user user    123 Janv 2 12:34 login.log\n\tdrwxr-x--X 3 admin admin    4096 Févr 10 14:30 doc"
+  },
+  "accept": [
+    "^secure$"
+  ],
+  "hint": "Recherchez le nom du fichier 'secure' dans la liste des fichiers du répertoire '/'",
+  "explanation": "Cette question est pertinente pour l'exercice de reconnaissance et énumération car elle demande à l'étudiant de rechercher un fichier spécifique dans une liste de fichiers. Cela lui permettra d'identifier potentiellement des vulnérabilités ou des accès non autorisés."
+}

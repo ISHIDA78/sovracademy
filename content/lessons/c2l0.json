@@ -1,0 +1,10 @@
+{
+  "concept": [
+    "Internet est un réseau global de connexion pour les ordinateurs.",
+    "Il permet la communication entre les appareils via des adresses IP uniques.",
+    "Mécanisme interne : les données sont divisées en paquets, qui suivent le chemin jusqu'au récepteur final.",
+    "Ce qui est important en pratique : connaître les protocoles de base (TCP/UDP) pour comprendre comment fonctionne Internet."
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise un routeur pour rediriger une demande HTTP vers un site ciblé, mais mal utilisé."
+}

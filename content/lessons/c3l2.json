@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Chiffrement asymétrique : méthode de cryptage utilisant des clés publiques et privées distinctes",
+    "Résout le problème de la confidentialité dans les communications sécurisées",
+    "Mécanisme interne : utilisation d'un algorithme de chiffrement (RSA, ECC) pour transformer les données avec une clé publique et vérifier la signature avec une clé privée",
+    "En pratique, utiliser des bibliothèques de cryptographie pour gérer les clés et l'algorithmique de chiffrement",
+    "Lien avec la sécurité offensive : attaquer le système en trouvant la clé privée, lié à la sécurité défensive : protéger la clé privée contre les attaquants",
+    "Piège important : le risque d'erreur humaine lors du stockage ou de l'utilisation des clés"
+  ],
+  "code": "# Utilisation de la bibliothèque OpenSSL pour générer et stocker une paire de clés RSA\n# Importer les clés et initier le contexte de chiffrement\n\n#include <stdio.h>\n#include <openssl/rsa.h>\n\n// Générer une paire de clés RSA\nRSA* rsa = RSA_new();\nBIGNUM* exponent = BN_new();\nbignum_copy(exponent, RSA_f4); // pour 65537\nRSA_generate_key_ex(rsa, 2048, exponent);\n\n// Stocker la clé publique et privée dans des fichiers de format PEM\nFILE *file_pub = fopen(",
+  "situation": ""
+}

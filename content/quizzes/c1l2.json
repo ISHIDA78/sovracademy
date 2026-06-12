@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Comme un administrateur Linux, vous devez vérifier les permissions des fichiers et répertoires pour garantir que les données sont sécurisées. Vous souhaitez vérifier les permissions d'un répertoire spécifique.",
+  "accept": [
+    "^ls -la /home/user/Documents$",
+    "^ls\\s+-la\\s+/home/user/Documents$"
+  ],
+  "hint": "Pensez à utiliser l'option -a pour afficher les permissions détaillées.",
+  "explanation": ""
+}

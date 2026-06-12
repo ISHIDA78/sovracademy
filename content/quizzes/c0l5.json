@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scenario": "Cette commande est incorrecte ou dangereuse : echo * | grep 'motcle'",
+  "context": {
+    "fakeOutput": "Le motcle est introuvable dans le fichier et une erreur de syntaxe a lieu."
+  },
+  "accept": [
+    "^echo '\\* motcle' \\| grep 'motcle'$",
+    "^echo\\s+'\\*\\s+motcle'\\s+\\|\\s+grep\\s+'motcle'$"
+  ],
+  "hint": "L'utilisation des guillemets est incorrecte",
+  "explanation": "Le broken était incorrect car les guillemets autour du texte à rechercher étaient omis, ce qui rendait difficile l'intégration avec la redirection de sortie. Le fixed fonctionne car les guillemets sont ajoutés pour que le shell puisse comprendre correctement l'expression."
+}

@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Qu'est-ce qu'une interruption sur le système?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Réception d'un message",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Signaux envoyés par le système",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Réalisation d'une tâche",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Contrôle des mémoires",
+      "correct": false
+    }
+  ],
+  "explanation": "Pour gérer les événements imprévus, comme un clignement de la lumière"
+}

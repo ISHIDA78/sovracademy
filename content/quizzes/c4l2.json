@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Identifiez le code de processus qui a appelé la fonction système.",
+  "context": {
+    "fakeOutput": "root@localhost:/# ps -ef | grep 'my_process'\n   PID PPID CMD\n     1234 5678 sh my_script.sh"
+  },
+  "accept": [
+    "^1234$"
+  ],
+  "hint": "Le code de processus qui a appelé la fonction système est indiqué dans le premier champs (PID)",
+  "explanation": "Cette réponse est importante car elle permet de déterminer quel processus a invoqué une fonction système, ce qui est essentiel pour comprendre l'activité du système et prendre les mesures nécessaires."
+}

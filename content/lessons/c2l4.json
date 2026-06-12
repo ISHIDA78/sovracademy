@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Firewall nftables : bloqueur de trafic réseau",
+    "Existe pour protéger la sécurité des réseaux contre les attaques externes",
+    "Mécanisme interne : filtre les paquets réseau en fonction de règles prédéfinies",
+    "En pratique, utiliser des lignes de commande spécifiques pour configurer et activer nftables",
+    "Lien avec la sécurité offensive : permet de détecter et de bloquer les attaques",
+    "Piège important : ignorer les logiques d'alternatif (OR) dans les règles nftables"
+  ],
+  "code": "# Configuration initiale\n$nft install\n\n# Création d'une règle pour bloquer les connexions SSH sur le port 22\nnft add rule ip from net 0.0.0.0/32 to dst port ssh\n\n# Règle pour autoriser les connexions HTTP vers un serveur spécifique\nnft add rule ip from any to dst address 192.168.1.100 dport http\n\n# Suppression d'une règle existante\nnft delete rule ip from net 0.0.0.0/32 to dst port ssh\n\n# Affichage des règles actuelles\nnft list all",
+  "situation": "Un attaquant essaye de se connecter via SSH à un serveur protégé par nftables, mais le firewall bloque la connexion"
+}

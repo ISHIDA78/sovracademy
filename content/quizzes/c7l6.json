@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouve le nom de l'exe exécuté par le processus : /usr/bin/xyz123",
+  "context": {
+    "fakeOutput": "Processus xyz123 (PID 1234) est en cours d'exécution. Exeuté par: /usr/bin/xyz123 -l -v"
+  },
+  "accept": [
+    "^xyz123$"
+  ],
+  "hint": "Vérifiez le nom de l'exe exécuté dans la commande.",
+  "explanation": "C'est crucial pour comprendre quelle est la nature du processus et potentiellement identifier les informations d'infection"
+}

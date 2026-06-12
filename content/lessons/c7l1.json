@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition : Reconnaissance d'information sur un système ciblé",
+    "Problème résolu : Accès non autorisé ou identification d vulnérabilités",
+    "Mécanisme interne : Utilisation de systèmes d'exploitation et de bibliothèques système pour collecter des informations",
+    "Ce qu'il faut savoir en pratique : Utiliser des outils tels que Nmap, Nessus ou OpenVAS pour effectuer une reconnaissance",
+    "Liens avec la sécurité offensive : Reconnaissance est un étape cruciale dans les attaques de phishing et de social engineering",
+    "Piège important : ne pas cacher soi-même, les systèmes qui n'ont pas été mis à jour sont souvent ceux que les attackers recherchent"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise une reconnaissance pour identifier les vulnérabilités d'un système Web sans être détecté."
+}

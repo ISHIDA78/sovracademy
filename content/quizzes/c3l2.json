@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est l'algorithme utilisé pour la génération des clés dans RSA?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Modulo inversible de 65537",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Factorisation d'un nombre",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Diffie-Hellman",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Encription asymétrique",
+      "correct": false
+    }
+  ],
+  "explanation": "La factorisation est très difficile à réaliser, l'algorithme utilisé est modulo inversible"
+}

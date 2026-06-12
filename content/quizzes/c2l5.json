@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Vous devez vérifier l'état du serveur VPN WireGuard. Pour cela, vous devez vous connecter à votre interface réseau et afficher les informations de configuration du VPN.",
+  "accept": [
+    "^ip -4 addr show \\| grep 'VPN'$",
+    "^ip\\s+-4\\s+addr\\s+show\\s+\\|\\s+grep\\s+'VPN'$"
+  ],
+  "hint": "Pensez à l'option -4 pour afficher uniquement les adresses IPv4",
+  "explanation": "Cette commande vous permet d'afficher les adresses IP actuelles et leurs informations de configuration, ce qui est essentiel pour vérifier le bon fonctionnement du serveur VPN."
+}

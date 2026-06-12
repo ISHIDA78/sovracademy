@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Comprenez l'importance des permissions sur un fichier pour empêcher les erreurs de sécurité lors du téléchargement d'un logiciel malveillant.",
+  "accept": [
+    "^chmod -u \\+x /bin/echo$",
+    "^chmod\\s+-u\\s+\\+x\\s+/bin/echo$"
+  ],
+  "hint": "Utilisez la commande `chmod` et pensez à modifier le mode de permission d'un fichier en utilisant l'option `-u` et `-x`",
+  "explanation": ""
+}

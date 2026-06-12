@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Protocole de transport de données",
+    "Résout le problème de l'indépendance des paquets de données",
+    "Mécanisme interne : le routage des paquets à travers un réseau",
+    "En pratique, comprendre la structure et le fonctionnement des sockets TCP et UDP pour éviter les attaques telles que la fragmentation et le tamponnement de paquets.",
+    "Liens avec la sécurité offensive : utiliser des protocoles robustes pour empêcher les attaques de fragmentation et de réplication, liens vers les concepts de fragmentation et de tamponnement."
+  ],
+  "code": "# Exemple d'utilisation de sockets TCP\n\ncréer un serveur TCP\nserver_tcp() {\n  socket() { \n    listen(8080);\n  }\n}\nsender_tcp() {\n  socket() { \n    connect('127.0.0.1:8080');\n  }\n}\nsample: server_tcp();\nsample: sender_tcp();\ncréer un client TCP\nclient_tcp() {\n  socket() { \n    connect('127.0.0.1:8080');\n  }\n}\nsample: client_tcp();",
+  "situation": "Un attaquant utilise la fragmentation pour perturber le trafic réseau d'un système, comment peut-il être empêché ?"
+}

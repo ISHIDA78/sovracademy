@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez le nom de la variable utilisée pour partager une mémoire entre deux processus.",
+  "context": {
+    "fakeOutput": "processus1@0x00007ffff7f3c800, processus2@0x00007ffff7f3c900\nCommencer : [2024-02-20 13:34:21 +0100]  root@localhost kernel: [  0.000000]   -bash(13962) : $ shared_memory=10000"
+  },
+  "accept": [
+    "^shared_memory$"
+  ],
+  "hint": "Ligne de commande contenant le nom de la variable utilisée pour partager une mémoire entre deux processus.",
+  "explanation": "Il s'agit d'un exemple de partage de données entre processus. La variable 'shared_memory' est utilisée pour partager une valeur (10000) entre deux processus, ce qui est un aspect clé de la communication inter-processus."
+}

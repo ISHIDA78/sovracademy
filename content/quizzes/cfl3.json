@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le registre utilisé pour stocker l'adresse MAC d'un terminal?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Table des Adresses MAC",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Buffer de données",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Table des Connexions",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Memoriale virtuel",
+      "correct": false
+    }
+  ],
+  "explanation": "La Table des Connexions stocke toutes les informations de connexion"
+}

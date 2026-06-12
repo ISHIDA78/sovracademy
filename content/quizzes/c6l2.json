@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Quel est le résultat d'une attaque par overflow dans une fonction de système ?",
+  "context": {
+    "fakeOutput": "La commande 'printf' a atteint sa limite de buffer et affiche un message d'erreur : \"Buffer overflow\", suivi de l'adresse mémoire compromisée : 0x7f1234567890.\n Erreur : 22 (Permission denied)"
+  },
+  "accept": [
+    "^0x7f1234567890$"
+  ],
+  "hint": "Regardez l'adresse mémoire affichée dans la sortie",
+  "explanation": "C'est un exemple d'attaque par overflow, où le programme permet à une attaquant de remplir la pile avec des données malveillantes, compromettant ainsi la sécurité du système."
+}

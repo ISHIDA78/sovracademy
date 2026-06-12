@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Porte logique AND : opération logique qui vérifie si toutes les entrées sont vraies",
+    "Pourquoi ça existe : résout la question de savoir si au moins une entrée est vraie",
+    "Mécanisme interne concret : ALU (Accumulateur Logic Unit) qui applique l'opération sur les entrées",
+    "Ce qu'il faut savoir en pratique : utiliser les portes logiques pour créer des instructions d'instruction complètes",
+    "Lien avec la sécurité offensive ou défensive : utilisé dans des attaques exploitant des faiblesses dans le code, comme les attaques de buffer overflow",
+    "Piège ou subtilité importante : il est important de bien comprendre l'ordre d'évaluation des portes logiques pour éviter des bugs"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise une porte logique AND pour extraire des informations sensibles stockées dans un registre de l'applet kernel."
+}

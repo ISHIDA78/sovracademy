@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Créer une tâche d'automatisation pour régénérer les credentiels système tous les deux jours après 10h00.",
+  "accept": [
+    "^crontab -e -u root$",
+    "^crontab\\s+-e\\s+-u\\s+root$"
+  ],
+  "hint": "Pensez à utiliser l'option -e pour éditer le tableau de cron.",
+  "explanation": "Pour garantir la confidentialité des informations sensibles."
+}

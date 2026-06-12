@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Qu'est-ce que vérifie la porte logique AND ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "au moins une entrée est vraie",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "aucune entrée n'est vraie",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "seules les entrées sont vraies",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "toutes les entrées doivent être fausses",
+      "correct": false
+    }
+  ],
+  "explanation": "La porte logique AND vérifie que toutes les entrées sont vraies"
+}

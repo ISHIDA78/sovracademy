@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Identifiez l'anomalie dans les flux d'activité systèmeiques",
+  "context": {
+    "fakeOutput": "Utilisateur : root\nOutil : ps -ef | grep <Nom du processus>\nSortie : 1234\nOutil : kill 1234\nOutil : reboot"
+  },
+  "accept": [
+    "^reboot$"
+  ],
+  "hint": "Regardez l'option utilisée pour arrêter le système.",
+  "explanation": "Le système s'est révélé vulnérable aux attaques de type reboot. Le processus de corrélation d'alertes nous permet de détecter rapidement cette menace et prendre des mesures d'atténuation avant que les dommages ne soient trop importants."
+}

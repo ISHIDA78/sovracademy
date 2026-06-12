@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouve l'adresse de la fonction system dans le shellcode : \"system('/bin/ls')\" est-elle une adresse à distance ?",
+  "context": {
+    "fakeOutput": "[\"/bin/ls\", '/bin ls', ' /bin/ls ', '0x12345678']\n[\"/home/user\", '/etc/passwd']"
+  },
+  "accept": [
+    "^0x12345678$"
+  ],
+  "hint": "Recherche les adresses en hexadécimal dans la sortie.",
+  "explanation": "Les adresses à distance sont importantes pour comprendre comment fonctionne une attaque de stack overflow, car elles permettent aux attaquants d'échapper l'adresse du shellcode et de laisser des éléments de code malveillants dans le code exécutable. L adresse 0x12345678 est un exemple de valeur à distance."
+}

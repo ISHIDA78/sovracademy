@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition d'un registre : une zone de mémoire allouée à un processus pour stocker des valeurs",
+    "Résoud le problème de gestion des données entre les différents composants du système",
+    "Mécanisme interne concret : chaque registre est affecté à un numéro système ( syscall number )",
+    "En pratique, il faut connaître l'adresse mémoire exacte du registre et son contenu pour l'utiliser efficacement",
+    "Liens avec la sécurité offensive : les registres peuvent être exploitées pour obtenir des informations sensibles ou effectuer des opérations malveillantes",
+    "Piège important : le flags de registre peuvent être utilisés pour détecter et empêcher certaines types d'attaques"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise la capacité à exploiter les registres pour obtenir le numéro système de l'admin et s'insérer dans le code du système en passant par les flags de registre déclenchés lors de l'exécution du code malveillant"
+}

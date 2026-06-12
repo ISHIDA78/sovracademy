@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le but principal de la mémoire virtuelle en OS?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Résoudre les problèmes de gestion de l'allouement",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Permettre aux processus d'accéder à des adresses de mémoire",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Améliorer la sécurité des données",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Réduire les coûts de production",
+      "correct": false
+    }
+  ],
+  "explanation": "L'allouement est géré efficacement sans connaître les adresses physiques"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le mécanisme interne utilisé par les schedulateurs pour résoudre le problème du temps partagé ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "FCFS",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "RR",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "SJF",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "PSLF",
+      "correct": false
+    }
+  ],
+  "explanation": "Le mécanisme de First Come First Served (FCFS) est incorrect, le correct est Round Robin (RR)"
+}

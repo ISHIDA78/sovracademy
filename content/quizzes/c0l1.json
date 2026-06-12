@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Vous avez besoin d'accéder aux fichiers de configuration du système. Vous souhaitez afficher les informations de sécurité des utilisateurs en lecture exclusive.",
+  "accept": [
+    "^getent passwd \\| grep password$",
+    "^getent\\s+passwd\\s+\\|\\s+grep\\s+password$"
+  ],
+  "hint": "Pensez à utiliser la commande getent pour accéder aux informations système, et à l'option qui permet de filtrer les résultats par nom d'utilisateur.",
+  "explanation": ""
+}

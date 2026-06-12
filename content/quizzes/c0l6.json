@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Vérifiez les informations d'ip et port du serveur web actuellement accédé.",
+  "accept": [
+    "^ss -l \\| grep :80$",
+    "^ss\\s+-l\\s+\\|\\s+grep\\s+:80$"
+  ],
+  "hint": "Pensez à utiliser la commande ss pour afficher des informations sur le réseau",
+  "explanation": "Cette commande vous permet de vérifier les informations d'ip et port du serveur web actuellement accédé, essentiel pour comprendre l'endroit où se trouve votre machine et ainsi renforcer vos défenses."
+}

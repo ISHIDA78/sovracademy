@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Les permissions, c'est comme les clefs de la maison",
+    "Pourquoi ça existe : pour contrôler l'accès aux ressources du système",
+    "Mécanisme interne : chaque fichier ou répertoire a un owner (propriétaire) et un groupe, avec des droits spécifiques",
+    "En pratique : utiliser le command `chmod` pour modifier les permissions, `ls -l` pour voir les permissions d'un fichier ou répertoire",
+    "Lien avec la sécurité offensive : un hacker pourrait essayer de trouver des vulnérabilités dans les permissions pour accéder aux ressources sensibles",
+    "Piège important : ne jamais utiliser le mot de passe par défaut, car cela facilite l'accès pour les hackers"
+  ],
+  "code": "",
+  "situation": "Un hacker essaie d'accéder à un serveur web en tentant de modifier les permissions des fichiers et répertoires pour pouvoir lire ou écrire sur eux."
+}

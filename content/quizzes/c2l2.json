@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez l'Adresse IP de votre machine dans la sortie système",
+  "context": {
+    "fakeOutput": "ARP - 224.0.0.122 - IN-ADDR-PRESENT - 192.168.1.100 - - - - -\nICMP Redirect 192.168.1.1 -> 192.168.1.100"
+  },
+  "accept": [
+    "^192\\.168\\.1\\.100$"
+  ],
+  "hint": "L'ARP indique l'Adresse IP de votre machine (224.0.0.122) et la réponse ICMP Redirect montre que cette adresse est associée à l'adresse IP 192.168.1.100",
+  "explanation": "C'est important car cela confirme que les ARP et DNS sont utilisés pour éviter les collisions d'adresses IP, nous trouvons ici la valeur de la réponse ARP"
+}

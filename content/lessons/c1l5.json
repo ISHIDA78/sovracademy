@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Une ligne de commande est un mot qui représente une action à effectuer sur le système",
+    "Ce concept existe pour permettre aux utilisateurs de s'automatiser les tâches répétitives et de gagner du temps avec des commandes courtes.",
+    "Les commandes sont traitées par l'O.S. qui les décompose en plusieurs étapes : lecture du chemin, vérification d'existence, appel de la commande spécifique, lecture des arguments et finalement execution de la commande.",
+    "En pratique, il faut bien saisir la ligne de commande correcte pour qu'elle fonctionne. Si l'on fait une erreur dans le chemin ou les argument, on obtient une erreur qui aide à comprendre que quelque chose ne va pas.",
+    "Ce concept est utile pour un hacker car il peut être utilisé pour créer des scripts répétitifs et efficaces pour automatiser des attaques. Un défenseur peut utiliser le même concept pour automatiser des tâches administratives de sécurité."
+  ],
+  "code": "",
+  "situation": "Un hacker utilise awk pour extraire les informations sensibles contenues dans un fichier log."
+}

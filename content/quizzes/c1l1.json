@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scenario": "Cette commande est incorrecte ou dangereuse : find /home -type f -exec cp {} /mnt/backup/ /",
+  "context": {
+    "fakeOutput": "Error: invalid argument to -exec,,The third argument after -exec must be a command,"
+  },
+  "accept": [
+    "^find /home -type f -exec cp \\{\\} /mnt/backup/;$",
+    "^find\\s+/home\\s+-type\\s+f\\s+-exec\\s+cp\\s+\\{\\}\\s+/mnt/backup/;$"
+  ],
+  "hint": "l'option correcte pour la commande find est-elle une des options standard ?",
+  "explanation": "La commande `find` nécessite la option `-print` ou `-exec` pour spécifier l'action à exécuter sur les fichiers trouvés. L'option `-exec` est utilisée avec une commande qui sera exécutée pour chaque fichier trouvé, mais il faut fournir la commande correcte et non une commande avec un argument vide (`\\"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le rôle principal du bus mémoire ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Transmettre des instructions au processeur",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Gérer la communication entre CPU et mémoire",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Stocke les données de système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Contrôler le temps de réaction du système",
+      "correct": false
+    }
+  ],
+  "explanation": "Le bus mémoire est responsable de la connexion réseau de données entre processeur et mémoire."
+}

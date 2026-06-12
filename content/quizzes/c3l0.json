@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le principal objectif du chiffrement ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Protéger des informations contre les attaquants",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "Masquer un texte pour qu'il ne puisse pas être lu",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Simplifier le codage",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Réduire la sécurité des données",
+      "correct": false
+    }
+  ],
+  "explanation": "Résoudre le problème du secret pour protéger les informations sensibles."
+}

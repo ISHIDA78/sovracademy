@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Le fichier est un conteneur de données",
+    "Pourquoi ça existe : permettre l'exécution d'instructions sur des données stockées",
+    "Mécanisme interne : le système utilise des droits d'accès pour contrôler qui peut lire ou écrire les fichiers (mode exécutable, mode de texte...)",
+    "En pratique : il faut connaître les permissions pour modifier un fichier, ce qui varie selon le système et le type de fichier",
+    "Liens avec la sécurité : connaissance des droits d'accès permet de protéger contre les attaques basées sur les fichiers (par exemple injection de code)",
+    "Piège ou subtilité importante : ne pas oublier les fichiers cachés et temporaire"
+  ],
+  "code": "",
+  "situation": "Un hacker souhaite injecter du code malveillant dans un système Linux, il commence par modifier la permission de fichier pour exécuter son script."
+}

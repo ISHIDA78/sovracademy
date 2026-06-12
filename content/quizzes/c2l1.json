@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le modèle OSI ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "7 couches logiques",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "5 couches physiques",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Modèle 7",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Modèle 5",
+      "correct": false
+    }
+  ],
+  "explanation": "Le modèle OSI est composé de 7 couches logiques"
+}

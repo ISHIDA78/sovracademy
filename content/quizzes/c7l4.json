@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Qu'est-ce que le tas ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "résultat d'une fusion de mémoires",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "mécanisme de gestion des mémoires",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "mode d'exécution",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "type d'erreur",
+      "correct": false
+    }
+  ],
+  "explanation": "mécanisme de gestion des mémoires"
+}

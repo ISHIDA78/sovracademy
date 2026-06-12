@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouve le processus qui est en cours d'exécution dans l'arrière-plan (identifiant du processus)",
+  "context": {
+    "fakeOutput": "ps -ef | grep systemd\n 1 root      0:00     0.0  43332   13352 ?        Sl    1923 systemd-\n 2 root      0:02     0.1 14344   13544 ?        Sl    1924 systemd-\n 3 user     0:05     0.2  51220   12124 pts/0   S+   1935 bash"
+  },
+  "accept": [
+    "^1923$"
+  ],
+  "hint": "Utilise la commande ps pour afficher les processus en cours d'exécution",
+  "explanation": "Ce processus est le serveur de gestion de processus systemd, ce qui permet aux utilisateurs de gérer les tâches sans avoir à manipuler manuellement le shell. L'identification du processus correct est important pour comprendre comment fonctionne le système et pouvoir éventuellement le arrêter si nécessaire."
+}

@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez le PID de la session TCP utilisée pour transférer des données entre deux appareils.",
+  "context": {
+    "fakeOutput": "PID du processus : 1234\nTCP SYN reçu sur la carte réseau 0x01\nUDP connexion établie avec 192.168.1.100\nFermé le port 80\ntemporalisation de la session : 2 secondes\nTCP FIN envoyé à 192.168.1.50"
+  },
+  "accept": [
+    "^1234$"
+  ],
+  "hint": "Recherchez dans les lignes qui indiquent le PID ou l'ID processus.",
+  "explanation": "Le PID (Process ID) est un identifiant unique pour chaque processus en cours d'exécution. Dans ce contexte, il est crucial de connaître le PID du processus qui utilise la session TCP pour transférer des données entre les appareils, car cela nous permettra de comprendre comment les paquets de données sont traités et réceptionnés."
+}

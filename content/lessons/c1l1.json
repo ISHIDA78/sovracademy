@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Une variable est un conteneur qui stocke une valeur, c'est comme un boîtier où tu mets ton argent, il te permet de garder quelque chose sans le perdre.",
+    "Pourquoi les variables existent-ils ? Pour résoudre le problème de la répétition et de l'erreur, en effet, si tu écris le même code plusieurs fois, tu risques d'avoir des erreurs ou de perdre du temps à le réécrire.",
+    "Un mécanisme interne : la variable est stockée dans une mémoire réservée, lorsqu'on la définit avec une valeur, celle-ci se sauve dans cette mémoire. Lorsque l'on récupère la valeur d'une variable, c'est comme chercher le contenu de ce boîtier.",
+    "En pratique, pour utiliser des variables, il faut les définir avant d'utiliser leur valeur, et nous devons bien garder à l'esprit que les variables peuvent être modifiées après leur définition.",
+    "Avantage pour un hacker : avoir accès aux variables de son adversaire peut lui permettre de déterminer des informations sensibles sur son système ou son utilisateur. Avantage pour un défenseur : utiliser des variables pour stocker des mots de passe ou des clés cryptées en toute sécurité."
+  ],
+  "code": "",
+  "situation": "Un hacker essaie de récupérer les mots de passe de son adversaire, il essaie d'obtenir l'accès aux variables qui stockent ces informations."
+}

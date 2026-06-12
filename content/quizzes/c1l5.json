@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scenario": "Cette commande est incorrecte ou dangereuse : grep -v \"mot\" fichier.txt",
+  "context": {
+    "fakeOutput": "Aucun résultat trouvé pour la recherche de \"mot\" dans le fichier."
+  },
+  "accept": [
+    "^grep 'mot' fichier\\.txt$",
+    "^grep\\s+'mot'\\s+fichier\\.txt$"
+  ],
+  "hint": "L'option à utiliser avec grep est-elle correcte ?",
+  "explanation": "La commande `grep -v` inverse les chaînes de caractères du mot de recherche, ce qui rendrait l'affichage impossible. La commande corrigée utilise la option `-i` pour rechercher le mot en toute casse."
+}

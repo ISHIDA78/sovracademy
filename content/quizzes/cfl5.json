@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le premier point de contact du système pour les programmes ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Les disques physiques",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Les répertoires racines",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Le démarrage du système",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Les programmes initiaux",
+      "correct": false
+    }
+  ],
+  "explanation": "Init : le premier point de contact du système pour les programmes"
+}

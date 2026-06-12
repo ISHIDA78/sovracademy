@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Appel système : appel à une fonction du noyau",
+    "Résout le problème de communication entre processus user et noyau",
+    "Mécanisme interne : syscall table (registres rax/rbx/rsi/rdi) avec syscall numbers (numéros system call)",
+    "En pratique : utiliser des syscall pour passer des données entre processus ou du shell et le noyau",
+    "Liaison avec la sécurité offensive : attaques via syscall, ex : ROP (Return-Oriented Programming)",
+    "Piège important : gestion des overflow syscall, pour éviter les exploits de type buffer overflow"
+  ],
+  "code": "# Exemple d'appel système sys_read\n# entre processus user et noyau\n\trax = 0x10000010; rdi = 0x20000000; syscall(60);\n# Résultat : lire 4 bytes à partir de 0x20000000\n\n# Exemple de syscall table avec syscall numbers\n\ntable_syscall = [0x10000000, 0x10000010, 0x10000020]\n\nrax = 0; rbx = 0; rsi = 4; rdi = 0x20000000;\nsyscall(0); # sys_read\nsyscall(1); # sys_write",
+  "situation": "Un attaquant utilise un exploit de ROP pour appeler sys_read() avec une adresse mémoire inférieure à celle allouée, provoquant une overflow syscall et permettant d'exécuter du code malveillant."
+}

@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scenario": "Cette commande est incorrecte ou dangereuse : ls -l /etc/passwd",
+  "context": {
+    "fakeOutput": "Les permissions du fichier sont incohérentes, il faut utiliser ls -d pour afficher les permissions et le contenu des fichiers dans un seul liste."
+  },
+  "accept": [
+    "^ls -ld /etc/passwd$",
+    "^ls\\s+-ld\\s+/etc/passwd$"
+  ],
+  "hint": "L'option manquante ou la flag incorrecte",
+  "explanation": "Le format de sortie 'l' est utilisé par défaut pour les listages de dossier. Le 'd' permet d'afficher les permissions, le propriétaire, l'owner, l'access rights et le modification date dans une seule ligne."
+}

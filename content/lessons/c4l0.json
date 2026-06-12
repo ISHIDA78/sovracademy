@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Processus : suite d'executions de programme séquentielles",
+    "Résolve le problème de la gestion des ressources et des tâches concurrentes",
+    "Mécanisme interne : registre des points suspens (RS), syscall numbers, structures kernel",
+    "En pratique : allocation/mise en file d'attente de processus, communication IPC",
+    "Lien avec la sécurité offensive : vulnérabilités dans l'exécution concurrente",
+    "Piège ou subtilité importante : usage incorrect du RS pour éviter la mise en file d'attente"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise un exploit pour créer un processus démonstrateur, l'exécuter sur un système vulnérable et profiter de la situation pour accéder à des ressources sensibles."
+}

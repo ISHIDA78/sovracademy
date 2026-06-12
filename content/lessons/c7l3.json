@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition : Stack overflow est une technique d'exploitation où l'application utilise toute la mémoire disponible pour stocker des données, provoquant un échappement de adresse (ESI) à distance",
+    "Résolution du problème : éviter les appels de fonction avec arguments longs ou répétitifs, améliorer le suivi et la gestion de l'espace mémoire",
+    "Mécanisme interne concret : L'appel d'une fonction qui utilise toute la pile, provoquant un overflow des registres RBP (base de pile) et SP (sommet de pile)",
+    "Ce qu'il faut savoir en pratique : identifier les appels avec arguments longs ou répétitifs, ajuster le limite de mémoire allouée à une fonction",
+    "Lien avec la sécurité offensive : utiliser des techniques de code injection pour exploiter un Stack overflow, comme dans les vulnérabilités CVE-2019-07371",
+    "Piège ou subtilité importante : la gestion de l'espace mémoire peut être plus critiquée si l'appellation du programme est une chaîne Unicode très longue"
+  ],
+  "code": "",
+  "situation": ""
+}

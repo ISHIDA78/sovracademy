@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Qu'est-ce qu'un registre dans un processus?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Zone de mémoire allouée à un processus",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Pile CPU pour stocker les données",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Segment de code et de données",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Flag pour signaler une erreur",
+      "correct": false
+    }
+  ],
+  "explanation": "La réponse correcte est 'Zone de mémoire allouée à un processus'"
+}

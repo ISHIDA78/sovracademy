@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel mécanisme permet à l'exécution d'une instruction unique de résoudre un problème spécifique ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Réponse dans les registres",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Syscall numbers",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "Mécanisme interne des opcodes",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "Langage machine entier",
+      "correct": false
+    }
+  ],
+  "explanation": "L'exécution précise de l'opcode"
+}

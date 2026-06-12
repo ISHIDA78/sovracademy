@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "BGP : routeur de haut niveau",
+    "Existe pour coordonner routes entre les ASN",
+    "Mécanisme interne : BGP est un protocole de routage dynamique qui utilise des tables de route pour définir la communication entre routeurs.",
+    "En pratique, il faut connaître l'ASN, utiliser la commande bgp show neighbors pour voir les voisinages et les routes.",
+    "Liaison avec la sécurité : une attaque possible est un spoofing BGP, où un attaquant envoie des routes falsifiées pour déformer le trafic réseau.",
+    "Piège important : il faut utiliser des protocoles de cryptage pour sécuriser la communication BGP."
+  ],
+  "code": "# Connexion à un routeur avec un ASN\nbgp show neighbors | grep <ASN>\n# Vérification des voisinages et des routes\nbgp show routes type borrar | less\n# Suppression de routes non souhaitées",
+  "situation": "Un attaquant envoie des routes falsifiées vers le routeur pour déformer le trafic réseau, il faut donc découvrir l'ASN et vérifier les voisinages pour identifier la vulnérabilité."
+}

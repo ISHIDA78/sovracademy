@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le but du swap en Linux?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Épuiser les fichiers disques",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Charger les pages de piste supplémentaire en mémoire physique",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Améliorer la performance du système",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Réduire les temps d'échouement",
+      "correct": false
+    }
+  ],
+  "explanation": "Mémoire temporaire pour éviter l'épuisement des fichiers disques"
+}

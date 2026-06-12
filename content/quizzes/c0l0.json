@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Il faut lister les fichiers du répertoire des logs pour savoir quelles configurations sont activées.",
+  "accept": [
+    "^ls -l /var/log$",
+    "^ls\\s+-l\\s+/var/log$"
+  ],
+  "hint": "Pense à utiliser l'option -l pour voir les informations détaillées sur les fichiers.",
+  "explanation": "Cette commande permet de vérifier les informations de sécurité des logs pour éviter les vulnérabilités."
+}

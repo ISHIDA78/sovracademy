@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Namespace : espace de noms où s'insère le système",
+    "Problème résolu : éviter les conflits de noms et de contexte",
+    "Mécanisme interne : utilisation des filesystems virtuels (inodes) et des namespaces",
+    "En pratique : configurer les namespaces pour isoler les applications",
+    "Lien avec la sécurité offensive : permettre à un exploit d'échapper aux constraints du système",
+    "Pégue : privilèges de namespace non configurés peuvent conduire à l'injection de code"
+  ],
+  "code": "",
+  "situation": "Une attaquant utilise un exploit pour injecter du code dans le contexte d'un processus isolé par namespace, permettant à l'exploit d'échapper aux contraintes du système"
+}

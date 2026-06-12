@@ -1,0 +1,8 @@
+{
+  "concept": [
+    "Liaison sécurisée pour les réseaux",
+    "Sécuriser le trafic en temps réel avec une cryptographie adéquate"
+  ],
+  "code": "# Code WireGuard pour VPN\n\n# Configuration de base\n\nlistenPort = 51820\nprivateKey = \"f7x4XjHm2JL8QVY9kP8wH+U1rBZ5jT6NlLWpM4xKq3h\" # clé privée générée aléatoirement\nlistenAddress = « 192.168.1.100 »\n\ndir = /etc/wireguard/\n\n# Connexion distant\npublicKey = \"HkQ4N9wV7GyT8pC8kK9b3m4Bf5ZjJ7FzWlMxgS1rU6\" # clé publique du client\nclientAddress = « 192.168.2.100 »\n\ndistance = 10\n\n# Déclaration des configurations\n[Interface]\nPublicKey = \"HkQ4N9wV7GyT8pC8kK9b3m4Bf5ZjJ7FzWlMxgS1rU6\"\nAddress = « 192.168.2.100 »\nListenPort = 51820\n\n[Peer]\nEndpoint = « 192.168.1.100:51820 »\nAllowedIPs = 0.0.0.0/0\n\n# Sauvegarde des configurations de sécurité\nchmod -R 700 dir\nkey = base64 -w 0 privateKey | sudo tee --prefix wireguard.key > /dev/null # enregistrer clé privée sous forme binaire\n\n# Exécution du script initialement\ncode -u -f -t -c /dev/null -- /usr/lib/wireguard/wg-quick-init <(echo \"listenPort = 51820; privateKey = \\\"f7x4XjHm2JL8QVY9kP8wH+U1rBZ5jT6NlLWpM4xKq3h\\\"\") # initialisation avec une configuration standard",
+  "situation": "Un attaquant souhaite intercepter les données sensibles via un VPN. Le système utilise WireGuard pour sécuriser le trafic réseau en temps réel."
+}

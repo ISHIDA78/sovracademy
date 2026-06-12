@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "ip : adresse IP d'un ordinateur sur le réseau",
+    "Pourquoi ça existe : identifier les appareils sur une connexion internet",
+    "Mécanisme interne : la recherche de l'adresse IP via DNS ou cache",
+    "En pratique : utiliser ip pour vérifier l'existence d'un réseau ou d'un appareil",
+    "Lien avec la sécurité : éviter les attaques par proxy ou spoofing"
+  ],
+  "code": "",
+  "situation": ""
+}

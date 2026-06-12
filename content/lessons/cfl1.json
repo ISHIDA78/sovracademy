@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Lecture du header kernel : définition des structures",
+    "Le problème : séparer les informations de base pour la sécurité et l'exécution efficace",
+    "Mécanisme interne concret : le processus de lecteur / initialement dans le header",
+    "En pratique, comprendre comment les données sont stockées et triées",
+    "Lien avec la sécurité offensive : échapper aux attaques via les API système",
+    "Piège important : ne jamais oublier de définir correctement les permissions initiales"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise une vulnérabilité dans les API système pour obtenir le shell d'un serveur Linux sans autorisation administrative. La défense consiste à utiliser un nouveau modèle de permission initiale pour contrôler les permissions d'initialisation."
+}

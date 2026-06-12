@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "SIEM : système d'information pour la détection et l'analyse des activités suspectes",
+    "Résout le problème de détection précoce des attaques malveillantes en réseau",
+    "Mécanisme interne concret : lecture des logs systèmes, collecte de données de sécurité",
+    "En pratique : configuration du SIEM pour filtrer les événements de sécurité, mise en place d'un système de notification pour alertes",
+    "Liaison avec la sécurité offensive : permet de détecter les attaques et identifier les vulnérabilités avant qu'elles ne soient exploitées",
+    "Piège important : le manque de configuration adéquate du SIEM peut rendre difficile la détection des activités malveillantes"
+  ],
+  "code": "",
+  "situation": ""
+}

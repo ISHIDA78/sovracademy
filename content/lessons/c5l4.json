@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Bus mémoire : connexion réseau de données entre processeur et mémoire",
+    "Résout le problème de communication efficace entre les composants du système",
+    "Mécanisme interne : les bus sont gérés par le CPU, utilisant des adresses et des registres pour stocker des données",
+    "En pratique : utiliser les bus pour transférer des données à une vitesse élevée, en minimisant les interruptions du processus",
+    "Liens avec la sécurité offensive : les attaques contre les bus peuvent être utilisées pour injecter du code malveillant ou pour modifier les données sensibles",
+    "Piège : l'utilisation abusive des bus peut entraîner une consommation excessive de pouvoir, ce qui peut provoquer un crash du système"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise un DMA pour injecter du code malveillant dans le système, en utilisant les bus pour accéder à la mémoire et éviter les interruptions du processus."
+}

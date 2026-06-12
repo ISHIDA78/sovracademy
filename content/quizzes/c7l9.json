@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Vérifiez l'identité du processus en cours d'exécution pour comprendre comment les contrôles de sécurité fonctionnent.",
+  "accept": [
+    "^ps -eo pid,user,comm \\| grep \\$\\(ps -o pid= --pid=\\$\\$\\)$",
+    "^ps\\s+-eo\\s+pid,user,comm\\s+\\|\\s+grep\\s+\\$\\(ps\\s+-o\\s+pid=\\s+--pid=\\$\\$\\)$"
+  ],
+  "hint": "Pensez à utiliser la commande ps pour afficher des informations sur le processus courant",
+  "explanation": "Cette commande permet de voir les informations d'identification du processus courant, essentielles pour comprendre comment les contrôles de sécurité affectent sa fonctionnement."
+}

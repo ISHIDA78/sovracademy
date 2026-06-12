@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scenario": "Cette commande est incorrecte ou dangereuse : setfacl -R -d -- deny any /home/user",
+  "context": {
+    "fakeOutput": "Étape d'application de la politique SELinux impossible : /usr/lib/selinux/modules/strongenforce.so, lignes 1-3\nError creating policy directory\nError creating policy\nError creating policy file"
+  },
+  "accept": [
+    "^setfacl -R -d -- deny user : group : others /home/user$",
+    "^setfacl\\s+-R\\s+-d\\s+--\\s+deny\\s+user\\s+:\\s+group\\s+:\\s+others\\s+/home/user$"
+  ],
+  "hint": "SELinux - Politique d'accès",
+  "explanation": "Le flag '-d' ne fonctionne pas avec le mode 'strongenforce'. Le mode strong en permet la configuration des ACLs, mais nécessite également la correction de l'option -- deny user : group : others. Ainsi, le correct est d'utiliser les ACLs pour contrôler la sécurité du système."
+}

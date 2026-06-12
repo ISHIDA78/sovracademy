@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez le nom du processus exécutant la commande 'ls -l' dans l'historique de commande.",
+  "context": {
+    "fakeOutput": "historique de commande:\nuser@localhost:~$ ls -l\n user@localhost:~$ cd /home/user/\n user@localhost:/home/user$"
+  },
+  "accept": [
+    "^ls$"
+  ],
+  "hint": "Recherchez le nom du processus à la fin de l'historique de commande.",
+  "explanation": "C'est important pour identifier les actions effectuées sur le système, ce qui peut aider à comprendre les menaces potentielles et à prendre des mesures correctives."
+}

@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition d'unsafe : permet l'accès direct à des éléments de mémoire non autorisés",
+    "Problème résolu : éviter les erreurs de type et attaques par overflow ou buffer",
+    "Mécanisme interne : utilisation d'une fonction spéciale pour gérer les accès",
+    "Ce qu'il faut savoir : utiliser la directive `unsafe` judicieusement",
+    "Lien avec la sécurité offensive : éviter les erreurs de type pour exploiter des vulnérabilités",
+    "Piège important : oubli de dire explicitement que l'accès à une mémoire non autorisée est interdit"
+  ],
+  "code": "",
+  "situation": ""
+}

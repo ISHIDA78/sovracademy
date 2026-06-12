@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Définition : IDS/IPS sont des systèmes de surveillance réseau qui détectent et alertent les administrateurs en cas d'activité suspecte.",
+    "Pourquoi existent-ils ? Pour prévenir les attaques malveillantes, les IDS/IPS aident à identifie les flux d'information normal et anormal sur le réseau.",
+    "Mécanisme interne : Ils utilisent des algorithmes de classification pour évaluer la gravité des événements réseau et envoyer des alertes aux administrateurs.",
+    "Ce qu'il faut savoir en pratique : Configurez vos IDS/IPS correctement, mettez-les en ligne avec votre système d'antivirus et assurez-vous que vous suivez les mises à jour de sécurité.",
+    "Lien avec la sécurité offensive : Les attaques qui réussissent sans être détectées peuvent exploiter des vulnérabilités identifiées par un IDS/IPS, donc comprendre comment ils fonctionnent est crucial pour l'attaque."
+  ],
+  "code": "",
+  "situation": "Un administrateur réseau découvre que son serveur de filet a été compromis par un attaquant malveillant. Il doit désactiver rapidement les accès pour prévenir la propagation du virus."
+}

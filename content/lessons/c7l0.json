@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition : Threat modeling est une méthode pour identifier, analyser et prioriser les vulnérabilités d'un système.",
+    "Résout le problème de connaissance des attaques potentielles et permet ainsi la mise en place de mesures de sécurité efficaces.",
+    "Mécanisme interne concret : la modèle de menace STRIDE (Spoofing, Tailgating, Replays, Impersonation, Denial of Service et Elevation of Privilege).",
+    "Ce qu'il faut savoir en pratique : comprendre les différentes catégories de menaces et identifier les vulnérabilités du système.",
+    "Lien avec la sécurité offensive ou défensive : Threat modeling est utilisé pour identifier les points faibles d'un système et les attaques potentielles, permettant ainsi la mise en place de mesures de sécurité défensives.",
+    "Piège ou subtilité importante : la variété des menaces peut être exploitée par les attaquants, il est donc important de comprendre les différents types de menace et les vulnérabilités associées."
+  ],
+  "code": "",
+  "situation": "Un attaquant essaie de infiltrer un serveur web en utilisant la technique de Spoofing, en envoyant une requête HTTP avec l'entête Host modifiée pour sembler une source valide."
+}

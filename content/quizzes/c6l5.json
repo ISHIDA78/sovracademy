@@ -1,0 +1,13 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez le type de processeur utilisé par le programme pour résoudre la compatibilité ELF et linker.",
+  "context": {
+    "fakeOutput": "Le programme utilise un processeur ARMv7 pour exécuter les instructions. Le fichier ELF a été créé avec le format ABI v0."
+  },
+  "accept": [
+    "^ARM$",
+    "^arm$"
+  ],
+  "hint": "Recherchez la mention de processeur dans la sortie système.",
+  "explanation": "Pour résoudre la compatibilité entre processeurs, il faut que le programme utilise un processeur compatible avec le format ELF standard. Le type de processeur utilisé est crucial pour éviter les erreurs d'exécution."
+}

@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Comment récupérer l'adresse d'un syscall ou d'une fonction kernel ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Modifier l'appellation de la fonction dans le code exécutable",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Utiliser un décompte des instructions système",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Recherche dans les bibliothèques du noyau",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Lire l'entrée de la table des symboles",
+      "correct": false
+    }
+  ],
+  "explanation": "B : le mecanisme i permet d'accéder aux informations sur les systèmes"
+}

@@ -1,0 +1,13 @@
+{
+  "concept": [
+    "Définition : la mémoire virtuelle est une ressource de l'OS qui permet aux processus d'accéder à des adresses de mémoire sans connaître les adresses physiques réelles.",
+    "Résout le problème de l'allouement efficace de la mémoire pour chaque processus, en permettant une réutilisation et un partage des pages de code et de données.",
+    "Mécanisme interne : les registres de gestion de paquet (PTE) contiennent les informations sur les adresses de page virtuelle et physique. Les syscall de paging sont utilisés pour accéder à la mémoire.",
+    "En pratique, les administrateurs d'OS doivent configurer le nombre de pages utilisées par chaque processus, ainsi que la politique de partage des pages.",
+    "L'explotation de la mémoire virtuelle est possible via des techniques telles que les buffer overflow ou l'emprunt de pages, ce qui peut entraîner des attaques comme celles décrites dans le CVE-2000-1197.",
+    "Piege ou subtilité importante : la mémoire virtuelle permet à un processus de créer des 'pages virtuelles' non présentes physiquement, ce qui peut être utilisé pour masquer des informations sensibles ou pour simuler l'exécution d'un code différent du code réel.",
+    "code"
+  ],
+  "code": "",
+  "situation": ""
+}

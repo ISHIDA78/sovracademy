@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Chaînes ROP : méthode d'exploitation utilisée pour reconstituer le code exécutable d'un processus",
+    "Répond à la question : comment récupérer l'adresse d'un syscall ou d'une fonction kernel ?",
+    "Mécanisme interne concret : les registres xrsi et xrdi sont stockés dans le register file (RFC 4881)",
+    "Ce qu'il faut savoir en pratique : utiliser des bibliothèques comme ROPgadget pour générer des chaînes ROP efficaces",
+    "Liens avec la sécurité offensive : Chaînes ROP sont utilisées par les attaquants pour exploiter les vulnérabilités kernel",
+    "Piège ou subtilité importante : les attaquants peuvent utiliser des 'canaries' ( registres de détection) pour détecter la présence d'un exploit réussi"
+  ],
+  "code": "",
+  "situation": ""
+}

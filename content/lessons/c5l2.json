@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Pipeline : séquencement d'instructions pour améliorer la performance",
+    "Résout le problème de l'overprovisionnement de cycles par les processeurs modernes",
+    "Mécanisme interne : les instructions sont décomposées en étapes plus petites, allouées à des unités spécialisées du processeur (ALUs, registers)",
+    "En pratique : identifier et attaquer ces unités pour contrecarrer l'exécution de code malveillant",
+    "Lien avec la sécurité offensive : exploit d'injection de code dans les pipeline pour exécuter des instructions non autorisées",
+    "Piège importante : la gestion des registers et de l'état pipeline peut être exploitablee pour laisser des backdoors ou des backchaining"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise un exploit de pipeline pour injecter des instructions malveillantes dans le processus d'exécution. Le but est de contrecarrer cette injection et protéger les registres du système."
+}

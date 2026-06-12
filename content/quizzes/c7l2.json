@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Identifiez le processeur utilisé par l'application qui a généré cette sortie",
+  "context": {
+    "fakeOutput": "Uso de la commande 'cat' pour afficher le contenu d'un fichier : cat filename.txt"
+  },
+  "accept": [
+    "^cat$"
+  ],
+  "hint": "Recherchez dans les options de la commande 'cat'",
+  "explanation": "Il faut identifier le processus utilisé par l'application pour comprendre comment elle fonctionne et potentiellement pour trouver des vulnérabilités."
+}

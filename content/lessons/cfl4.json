@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Userland : programme exécuté par le processeur",
+    "Resout : gérer les applications, les données et l'interface utilisateur sans intervention du kernel",
+    "Mécanisme interne : système de shell (interpreteur de commandes) pour exécuter des commandes",
+    "En pratique : utiliser un shell minimal tel que Bourne ou Bash pour exécuter des commandes",
+    "Lien avec la sécurité : les shells sont souvent vulnérables aux attaques de type shellshock (CVE-2014-0160)",
+    "Piège importante : certains shells, comme Bash, peuvent être affectés par les variables d'environnement non sécurisées"
+  ],
+  "code": "",
+  "situation": "Un attaquant veut exploiter un serveur Linux pour voler les données. Il utilise un shellshock pour compromettre l'application et accéder aux informations sensibles."
+}

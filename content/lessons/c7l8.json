@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition : Corrélation d'alertes est le processus de détection d'anomalies dans les flux d'activité systèmeiques",
+    "Résoudre : identifier rapidement les menaces pour anticiper et atténuer les attaques",
+    "Mécanisme interne : Les systèmes d'exploitation utilisent des registres syscall (syscall numbers) pour enregistrer les appels système, tels que open(2), read(2) ou write(2).",
+    "En pratique : les administrateurs doivent configurer soigneusement leurs SIEM (Systeme d'Expertise de la sécurité de l'Information) et leurs registres de détection pour détecter les anomalies dans les flux d'activité systèmeiques.",
+    "Lien avec la sécurité offensive : La corrélation d'alertes est essentielle à la sécurité offensive, car elle permet aux experts de comprendre comment les attaquants exploitent les vulnérabilités des systèmes.",
+    "Piège ou subtilité importante : éviter de configurer les alertes sur un niveau trop bas, ce qui peut masquer des menaces potentielles"
+  ],
+  "code": "",
+  "situation": "Un attaquant a été détecté tentant d'exploiter une vulnérabilité dans un serveur web, mais l'administrateur doit rapidement identifier les alertes pour anticiper l'attaque et prendre des mesures de sécurité."
+}

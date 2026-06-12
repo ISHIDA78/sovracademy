@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Mise à niveau des droits d'utilisateur pour renforcer la sécurité des systèmes Linux.",
+    "En permettant à l'utilisateur de prendre le contrôle de certains aspects de l'exploitation du système.",
+    "Le mécanisme interne implique la définition de permissions basées sur les modes de protection des fichiers.",
+    "Il faut savoir qu'une fois une permission accordée, elle peut être difficilement retirée.",
+    "Cela fait référence à la sécurité offensive car cela permet aux attaquants d'exploiter ces failles pour accéder à des informations sensibles ou prendre le contrôle du système.",
+    "L'un des principaux pièges est de ne pas avoir suffisamment testé et validé les changements apportés à la configuration du système."
+  ],
+  "code": "",
+  "situation": "Un attaquant réussit à infiltrer le système en exploitant une vulnérabilité dans un logiciel non mis à jour. Il veut accéder aux informations sensibles stockées sur le système pour les utiliser comme une forme de rétorsion."
+}

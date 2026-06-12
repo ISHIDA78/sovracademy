@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Identifiez le concept d'ownership dans ce fichier système qui montre la gestion des ressources en Rust.",
+  "context": {
+    "fakeOutput": "/proc/cpuinfo\\n\\nOnLine\\tDevice\\tManufacturer\\tModel Id\\tFlags\\tCPU Clock\\tCache\\tL1d Cache\\tL2a Cache\\tL2b Cache\\tL2c Cache\\n0\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n1\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n2\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n3\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n4\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n5\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n6\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n7\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n8\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n9\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone\\n10\\t\tIntel(R) Core\\tI7-9700K\\t40.5\\t2560KB\\t1MB\\t3\\tnone\\t4000\\tnone\\tnone\\tnone"
+  },
+  "accept": [
+    "^ownership$"
+  ],
+  "hint": "Recherchez le mot 'ownership' dans la sortie.",
+  "explanation": "Le concept d'ownership est essentiel en Rust pour gérer les ressources et éviter les erreurs de gestion des mémoires. Dans cette sortie, on peut voir que le système Linux utilise une structure de fichiers qui montre bien comment l'ownership est gérée, notamment avec le fichier /proc/cpuinfo qui détaille les informations sur chaque cœur du processeur."
+}

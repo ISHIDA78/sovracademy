@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le mécanisme interne utilisé par BGP?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Protocole de routage statique",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Protocole de routage dynamique",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Réseau virtuel privé",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Réseau local",
+      "correct": false
+    }
+  ],
+  "explanation": "BGP est un protocole de routage dynamique"
+}

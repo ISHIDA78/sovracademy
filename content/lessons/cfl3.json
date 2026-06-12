@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Réseau minimale : permettre à un système de communiquer en réseau sans passer par l'OS.",
+    "Résoudre le problème de la connectivité réseau dans un environnement minimalist",
+    "Mécanisme interne : les registres et les syscall numbers utilisent des adresses IP statiques pour se communiquer",
+    "En pratique, cela signifie spécifier l'adresse IP du serveur DNS et du routeur",
+    "Liaison avec la sécurité offensive : les attaques par explosion de connexion sont plus faciles à effectuer sans réseau minimale",
+    "Piège important : ne pas spécifier les adresses IP statiques pour éviter les attaques en explosion de connexion"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise un scan porteur pour essayer d'infiltrer le réseau sans passer par l'OS."
+}

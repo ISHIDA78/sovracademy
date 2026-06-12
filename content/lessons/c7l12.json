@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition : Threat Model, étape cruciale dans la conception sécurisée d'un système",
+    "Résout le problème de la connaissance et de l'analyse des menaces pour améliorer la sécurité du système",
+    "Mécanisme interne : Le threat model utilise les informations sur les systèmes de fichiers, les appels système et les registres pour identifier les vulnérabilités",
+    "En pratique, il faut connaître les données sensibles, les points d'entrée et les modes opérationnels du système pour anticiper les attaques potentielles",
+    "Liaison avec la sécurité offensive : Utiliser un threat model pour identifier des failles à exploiter et améliorer la défense contre ces failles",
+    "Piège importante : Ne pas prendre en compte les vulnérabilités dans le développement, car cela peut rendre difficile la mise en œuvre d'une solution de sécurité efficace"
+  ],
+  "code": "",
+  "situation": "Un équipe de développeurs de logiciels de gestion de base de données doit protéger leur produit contre une attaque de type SQL Injection"
+}

@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Scheduling: allocation temporelle des ressources pour les processus.",
+    "Résolve le problème de la gestion concorrente et concurrentielle du temps partagé par les processeurs.",
+    "Mécanisme interne : le scheduler utilise un tableau de priorités (roulettes, FIFO, HFCS) et un registre de gestion des systèmes appel (syscall numbers).",
+    "En pratique, il faut choisir un algorithme d'interruption approprié pour chaque système d'exploitation.",
+    "Liens avec la sécurité : les attaques contre les systèmes d'exploitation peuvent être influencées par le choix du scheduler et de ses priorités.",
+    "Piège important : les attaques qui exploite le fait que les systèmes d'exploitation peuvent donner la priorité à des processus non autorisés."
+  ],
+  "code": "# Exemple de scheduling avec un scheduler FIFO en C\n\ncreate(struct Process, *processes, size) {\n    size = sizeof(struct Process);\n    for (int i = 0; i < size; i++) {\n        processes[i].priority = 0;\n        processes[i].readyTime = -1;\n    }\n}\n\n# Fonction d'interruption pour le scheduler FIFO\nint syscall(int syscall_number) {\n    // Traite l'appel système\n    int ready_time = processes[0].readyTime;\n    if (ready_time != -1) {\n        return 0; // Ready\n    } else {\n        return 1; // Non-Ready\n    }\n}\n\n# Exemple d'utilisation du scheduler FIFO avec des processus à haute priorité\nprocesses[0].priority = 2;\nprocesses[0].readyTime = 10;\npriority_queue<int> pq; // Pile de priorités\npq.push(0);\npq.push(1);\npq.push(2);\npq.push(3);\npq.push(4);\npq.push(5);\npq.push(6);\nwhile (!pq.empty()) {\n    int index = pq.top();\n    pq.pop();\n    syscall(index);\n}",
+  "situation": "Un attaquant a découvert que le système exploite un scheduler FIFO basé sur une pile de priorités, ce qui lui permet d'influencer la séquence des processus et compromettre la sécurité du système."
+}

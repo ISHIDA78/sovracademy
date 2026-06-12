@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Il faut configurer un règle pour bloquer les connexions VPN via port 1194.",
+  "accept": [
+    "^nft add rule ip addr type filter tcp dport 1194 proto udp counter keep state up$",
+    "^nft\\s+add\\s+rule\\s+ip\\s+addr\\s+type\\s+filter\\s+tcp\\s+dport\\s+1194\\s+proto\\s+udp\\s+counter\\s+keep\\s+state\\s+up$"
+  ],
+  "hint": "Pensez à utiliser nftables pour contrôler le trafic réseau",
+  "explanation": "Cette commande permet de bloquer les connexions VPN via port 1194, ce qui renforce la sécurité du système"
+}

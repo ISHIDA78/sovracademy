@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Un retour est comme une lettre renvoyée à la poste",
+    "Pourquoi ça existe : permettre aux applications de s'autoriser en cas d'erreur",
+    "Mécanisme interne concret : l'application écrit un code d'état dans une variable, puis vérifie ce qui se trouve là.",
+    "En pratique : utiliser la commande `return` pour finir une fonction ou une boucle si une condition est fausse.",
+    "Lien avec la sécurité offensive ou défensive : les erreurs renvoyées peuvent être utilisées par des hackers pour trouver des vulnérabilités dans l'application.",
+    "Piège important : ne pas utiliser trop de retours, car cela peut indiquer à un hacker qu'il a trouvé quelque chose d'intéressant."
+  ],
+  "code": "",
+  "situation": "Une application web ne vérifie pas les informations d'authentification avant de procéder à une opération sensible, et le code retour indique qu'une erreur est arrivée pour bloquer l'accès."
+}

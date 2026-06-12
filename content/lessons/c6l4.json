@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Opcode : instruction informatique spécifique",
+    "Existe pour résoudre un problème spécifique (exécution d'une instruction unique)",
+    "Mécanisme interne : registres et syscall numbers pour l'exécution precise",
+    "En pratique : utiliser des opcodes pour éviter des erreurs de syntaxe",
+    "Liens avec la sécurité offensive : analyse des opcodes pour trouver des vulnérabilités",
+    "Piège important : usage incorrect d'opcodes peut faire exploser le programme"
+  ],
+  "code": "",
+  "situation": "Un attaquant exploite un programme mal écrit en utilisant une valeur incorrecte dans le registre xmm8 pour faire exploser le programme, ce qui peut conduire à une vulnérabilité critique."
+}

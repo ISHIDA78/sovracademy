@@ -1,0 +1,13 @@
+{
+  "type": "analyze",
+  "scenario": "Trouvez le certificat utilisé par la machine pour se connecter à un serveur HTTPS.",
+  "context": {
+    "fakeOutput": "Certificat d'authenticité CA-1234/2022-01-01\n (vérifiez '/etc/ssl/certs/ca-certificates.crt')\n Utilisez : 'openssl s_client -connect example.com:443 -CAfile /etc/ssl/certs/ca-certificates.crt'\n (Certificat valide pendant 365 jours)"
+  },
+  "accept": [
+    "^CA-1234$",
+    "^ca-1234$"
+  ],
+  "hint": "Recherchez le nom du certificat dans la sortie, puis vérifiez la date de validité.",
+  "explanation": "Ce certificat est utilisé par la machine pour se connecter à un serveur HTTPS. Il est important de connaître ce certificat car c'est cela qui permet une authentification sécurisée des communications en ligne."
+}

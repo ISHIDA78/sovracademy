@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Qu'est-ce qu'une attaque side-channel ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Attaque sur la clé",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Extraition de données sans accès direct",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Type d'attaque contre le protocole",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Vulnérabilité dans un système",
+      "correct": false
+    }
+  ],
+  "explanation": "Attaque utilisant des informations non directement accessibles"
+}

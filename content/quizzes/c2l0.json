@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Les données sont-elles divisées en paquets pour faciliter leur traitement?",
+  "options": [
+    {
+      "key": "A",
+      "label": "non, ils sont traités en bloc",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "oui, cela permet une gestion optimale de l'espace",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "seulement pour les communications téléphoniques",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "pas, ils sont traités directement dans la mémoire virtuelle",
+      "correct": false
+    }
+  ],
+  "explanation": "La bonne réponse permet une gestion optimale de l'espace."
+}

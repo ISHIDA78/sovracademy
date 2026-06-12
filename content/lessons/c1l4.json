@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Un agenda pour les tâches automatiques",
+    "Pourquoi ça existe : prévenir la désintégration des données et éviter les erreurs répétitives en manquant une simple tâche.",
+    "Mécanisme interne : le système lecture de commande (crontab) lit l'agenda pour exécuter les commandes à chaque minute, heure, jour, mois ou année.",
+    "En pratique : ajouter des lignes spécifiant la commande et les conditions d'exécution dans un fichier texte nommé crontab.",
+    "Liens avec la sécurité : contrôler les tâches automatiques peut empêcher un attaquant de prendre le temps de profiter d'un système déconduit ou en mode d'attente pendant une commande longue."
+  ],
+  "code": "",
+  "situation": "Un serveur web est connu pour être vulnérable aux attaques par bombardement et a besoin d'un système de gestion des tâches automatiques pour prévenir la désintégration des données."
+}

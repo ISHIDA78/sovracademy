@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Une fonctionnalité de hashing qui prend en charge la cryptographie des messages",
+    "Pour résoudre le problème de collision de chaînes de hashes (même entrée sortieant une même valeur de hash)",
+    "Un algorithme qui combine un message et un secret pour produire une valeur de hash unique",
+    "Il faut connaître le secret, mais pas le message original.",
+    "L'HMAC est utilisé dans les protocoles sécurisés pour authentifier les communications en temps réel.",
+    "La sécurité des H MAC repose sur la difficulté de trouver les secrets utilisés."
+  ],
+  "code": "# Définition d'une fonction de hashing \nhash = function(message, secret)\n  # Calcul du hash du message\n  message_hash = sha256(message)\n  # Combiner le message et le secret pour obtenir un hash unique\n  signature_hmac = hmac_sha256(message_hash, secret)\n# Utilisation d'HMAC en practice\nsecret = '1234567890'\nmessage = 'Bonjour, monde !'\nhash = hash(message, secret)\n # Déchiffrage de la signature HMAC pour vérifier l'intégrité du message\ndecodage_hmac = hmac_sha256(hash, secret)",
+  "situation": "Une attaque d'attaque par collision de chaînes de hashes peut être menée contre un système utilisant une simple fonction de hashing sans contrôle des secrets."
+}

@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Définition d'un pointeur en C",
+    "Pourquoi les pointeurs sont nécessaires pour manipuler la mémoire",
+    "Mécanisme interne du système de gestion de mémoire (register et syscall)",
+    "Ce qu'il faut savoir : declaration, initialisation, utilisations correctes",
+    "Liens avec la sécurité offensive : exploitation des erreurs de gestion de mémoire",
+    "Piège important : les pointeurs volés pour désAligner une variable"
+  ],
+  "code": "",
+  "situation": "Un exploitateur utilise des pointeurs pour désaligner la variable 'esp' et créer un buffer overflow."
+}

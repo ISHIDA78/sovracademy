@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel mécanisme interne utilise un registre des points suspens (RS) pour gérer les tâches concurrentes ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "même que le système d'exploitation",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "pour éviter la saturation des CPU",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "regarder les points suspens (RS)",
+      "correct": true
+    },
+    {
+      "key": "D",
+      "label": "en utilisant des mémoires virtuels",
+      "correct": false
+    }
+  ],
+  "explanation": "Le registre des points suspens (RS) permet de stocker l'état actuel du processeur"
+}

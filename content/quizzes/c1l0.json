@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Il faut lister les fichiers d'un répertoire spécifique pour vérifier si un logiciel est bien installé.",
+  "accept": [
+    "^ls -lR /usr/bin$",
+    "^ls\\s+-lR\\s+/usr/bin$"
+  ],
+  "hint": "Pensez à l'option -l et à la commande find",
+  "explanation": "Pour s'assurer que le système fonctionne correctement et qu'il n'y a pas de vulnérabilités dans les logiciels installés."
+}

@@ -1,0 +1,8 @@
+{
+  "concept": [
+    "Chiffrement symétrique, processus d'obtention d'un texte crypté à partir d'un autre",
+    "Résout le problème de confidentialité des données en transit sans nécessiter d'identifiants clés externes"
+  ],
+  "code": "# Chiffrement symétrique AES-256\n# Pour des données sensibles, on utilise AES-256 pour crypter les données\n\nciphered_data = encrypt(plain_text, 'secret_key')\n\ndef decrypt(ciphered_data, 'secret_key'):\n  return decrypt(ciphered_data)\n\n# ChaCha20, une alternative à l'AES pour chiffrement symétrique",
+  "situation": "Un client web transfère des données personnelles via HTTPS et les attaques de phishing ont déjà compromis des certificats SSL/TLS."
+}

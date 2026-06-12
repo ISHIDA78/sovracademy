@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le nom du block cipher le plus utilisé ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Advanced Encryption Standard",
+      "correct": true
+    },
+    {
+      "key": "B",
+      "label": "ChaCha20",
+      "correct": false
+    },
+    {
+      "key": "C",
+      "label": "TSA",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "RC4",
+      "correct": false
+    }
+  ],
+  "explanation": "Le AES est un standard pour les chiffres à blocs les plus utilisés dans le monde entier."
+}

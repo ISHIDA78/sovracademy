@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Initialisation du système : processus d'énumération des périphériques",
+    "Résout le problème de la démarche du système sur les périphériques",
+    "Mécanisme interne : initialisation des registres et des structures initiales",
+    "En pratique : vérification des périphériques, initialisation des tables de dispositifs",
+    "Liaison avec sécurité défensive : éviter les vulnérabilités dans l'init",
+    "Piège important : non-respect de la sécurité des périphériques lors de l'initialisation"
+  ],
+  "code": "",
+  "situation": ""
+}

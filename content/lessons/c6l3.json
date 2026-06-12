@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Assembleur x86-64 : définition de mises à jour directes",
+    "Existe pour améliorer la performance et éviter les traductions inutiles",
+    "Utilisation de registres spécifiques (rax, rbx, etc.) et syscall numbers",
+    "Comment identifier correctement les adresses de données avec l'opérateur %rip",
+    "La gestion des segments de base et des registres de pointeur",
+    "Référence à la sécurité : éviter la vulnérabilité du GOT"
+  ],
+  "code": "",
+  "situation": "Un exploitant utilise l'assemblage x86-64 pour naviguer dans le code du processus cible, évitant la vulnérabilité GOT."
+}

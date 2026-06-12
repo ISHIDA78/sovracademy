@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Une ligne de commande, c'est comme une instruction à un cuisinier",
+    "Elle permet d'exécuter des tâches spécifiques et automatisées pour nous aider dans nos activités quotidiennes. Dans le contexte informatique, les lignes de commande sont essentielles pour la sécurité en servant de point de départ pour tout script.",
+    "Lorsqu'une ligne de commande est entrée, elle est traitée par l'interpréteur et exécutée si nécessaire.",
+    "Pour utiliser efficacement une ligne de commande, il faut savoir quels arguments à passer et comment les ordonner.",
+    "Un hacker utilisera des lignes de commandes pour se faufiler dans un réseau ou pour effectuer un exploit. Un défenseur de la sécurité utilisera des lignes de commande pour mettre en place des mesures de sécurité telles que la gestion des permissions et l'automatisation des tâches.",
+    "Il faut être prudent lorsque l'on utilise les lignes de commandes, car elles peuvent aussi être utilisées par les attaques."
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise une ligne de commande pour obtenir un accès non autorisé à un fichier sensibles sur votre serveur."
+}

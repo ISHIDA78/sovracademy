@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Bootsurfer : logiciel chargé de charger le système d'exploitation",
+    "Résout le problème du boot manuel en fournissant un menu pour l'utilisateur",
+    "Mécanisme interne : lecture du fichier de configuration (grub.cfg) puis recherche du disque contenant le système d'exploitation via les partitions",
+    "En pratique : la commande `grub --version` permet de voir les différents boot options disponibles",
+    "Lien avec la sécurité offensive : une attaquant peut utiliser grub pour exécuter des commandes avant l'environnement de sécurité du système d'exploitation est mis en place",
+    "Piège : si un fichier de configuration non sécurisé est utilisé, un attaquant peut manipuler les options de boot pour exécuter du code malveillant"
+  ],
+  "code": "",
+  "situation": "Un attaquant utilise grub pour charger le système d'exploitation via un disque USB contenant un système malveillant, avant que l'utilisateur ne puisse saisir son mot de passe."
+}

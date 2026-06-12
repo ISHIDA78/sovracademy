@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Format ELF standard pour Linux",
+    "Résout le problème de la compatibilité entre processeurs",
+    "Mécanisme interne concret : structure ELF (ET_DYN), headers et sections",
+    "En pratique : utiliser objdump ou readelf pour analyser les ELF",
+    "Liens avec la sécurité offensive : exploitation de format ELF pour injection de code",
+    "Piège important : usage de section .plt pour accéder à des syscall numbers"
+  ],
+  "code": "",
+  "situation": "Un exploitateur utilise un programme malveillant qui utilise la section .plt pour injecter une syscall number et exécuter des code arbitraires sur le système."
+}

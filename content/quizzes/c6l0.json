@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scenario": "Cette commande est incorrecte ou dangereuse : valign = &a[10];",
+  "context": {
+    "fakeOutput": "Erreur de déclaraction d'une variable non pointeur."
+  },
+  "accept": [
+    "^valign = \\*\\(a \\+ 10\\);$",
+    "^valign\\s+=\\s+\\*\\(a\\s+\\+\\s+10\\);$"
+  ],
+  "hint": "Le problème est lié à la typologie des variables dans C.",
+  "explanation": "Dans le code 'broken', la variable 'a' est déclarée sans spécifier sa typologie. Dans l'exemple correct 'fixed', on utilise la syntaxe de pointeur avec '*'."
+}

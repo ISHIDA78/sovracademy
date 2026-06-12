@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Rédirection du sortement des lettres : à la maison, tu as souvent à faire un tri pour les lettres à la poste, les journaux et les papiers à déchirer.",
+    "Pourquoi ça existe : pour éviter de perdre le temps à rechercher une lettre ou un journal dans un tas de papier. C'est utile pour gérer les communications et préserver l'ordre.",
+    "Mécanisme interne concret : la commande `>` redirige le flux d'entrée vers un fichier, en sorte que toute sortie de la commande est écrasée dans ce fichier.",
+    "En pratique : utilise la commande `>>` pour appendir au fichier existant et `> >` (double point) pour supprimer tout contenu du fichier avant d'écrire.",
+    "Lien avec la sécurité offensive ou défensive : en tant qu'hacker, la redirection peut être utilisée pour faire disparaître des logs d'attaque, ce qui rend difficile le suivi et l'analyse.",
+    "Piège ou subtilité importante : évite de rediriger les erreurs vers un journal de sécurité ! Les hackers peuvent utiliser cela pour masquer leurs actes."
+  ],
+  "code": "",
+  "situation": ""
+}

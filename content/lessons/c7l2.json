@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Reversing une application",
+    "Pourquoi : identifier les vulnérabilités pour les attaques",
+    "Mécanisme interne : analyse de registres et syscall numbers",
+    "En pratique : utiliser des outils comme ida et objdump",
+    "Liens avec la sécurité offensive : identification de vulns pour exploitation",
+    "Piège important : l'importance du contexte d'exécution"
+  ],
+  "code": "",
+  "situation": "Une application vulnérable à une attaque de buffer overflow est exécutée avec un flux de tamponnement, permettant ainsi l'exploitation d'une adresse spécifique pour créer une erreur de segmentation."
+}

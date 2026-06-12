@@ -1,0 +1,10 @@
+{
+  "type": "cmd",
+  "scenario": "Recherchez les fichiers d'usage personnel dans le répertoire 'Desktop' et affichez uniquement ceux qui commencent par une lettre suivie d'un numéro.",
+  "accept": [
+    "^grep -i '\\.\\*\b/\\[0-9\\]\\.\\*\b' ~/Desktop/\\*$",
+    "^grep\\s+-i\\s+'\\.\\*\b/\\[0-9\\]\\.\\*\b'\\s+~/Desktop/\\*$"
+  ],
+  "hint": "Pensez à utiliser la commande grep pour rechercher des modèles de fichiers et à l'option -i pour les recherches non casse-majeures.",
+  "explanation": "Cette commande est utile car elle permet d'afficher uniquement les fichiers qui pourraient potentiellement contenir des informations personnelles ou sensibles."
+}

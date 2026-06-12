@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Processus systemd : fonctionnement d'un système de gestion de processus",
+    "Pourquoi ça existe : gérer les processus sans avoir à manuelment manipuler le shell pour éviter les erreurs et améliorer la fluidité des tâches.",
+    "Mécanisme interne concret : chaque processus a un fichier de configuration /usr/lib/systemd/system/<nom_projet>.service qui définit son comportement et ses dépendances avec d'autres services.",
+    "Ce qu'il faut savoir en pratique : utiliser les commandes systemctl pour gérer les services, notamment systemctl start, systemctl stop, systemctl restart, systemctl status.",
+    "Lien avec la sécurité offensive ou défensive : un service non configuré correctement peut exposer les informations sensibles du système à des attaques.",
+    "Piège ou subtilité importante : ne pas utiliser systemctl restart pour redémarrer un service, car cela peut entraîner une perte de données et affecter les services dépendants."
+  ],
+  "code": "",
+  "situation": "Un attaquant essaie de prendre le contrôle du serveur web d'un site en utilisant systemctl restart pour redémarrer le processus, mais le serveur est configuré pour ne reprendre que les services requis."
+}

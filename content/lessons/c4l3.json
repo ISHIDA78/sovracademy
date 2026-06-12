@@ -1,0 +1,11 @@
+{
+  "concept": [
+    "Communication inter-processus",
+    "Résolve les problèmes de synchronisation et de partage de données entre processus",
+    "Utilise des buffers temporaires pour échanger données",
+    "Les registres du kernel sont utilisés pour gérer les systèmes d'exploitation",
+    "Vulnérabilités dans le pipeline de sockets peuvent être exploitées par des attaques"
+  ],
+  "code": "",
+  "situation": ""
+}

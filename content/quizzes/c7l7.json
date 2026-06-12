@@ -1,0 +1,27 @@
+{
+  "type": "qcm",
+  "question": "Quel est le mécanisme interne utilisé dans un SIEM pour détecter les activités suspectes ?",
+  "options": [
+    {
+      "key": "A",
+      "label": "Lecture des journaux système",
+      "correct": false
+    },
+    {
+      "key": "B",
+      "label": "Analyse de flux réseau",
+      "correct": true
+    },
+    {
+      "key": "C",
+      "label": "Scanning du contenu réseau",
+      "correct": false
+    },
+    {
+      "key": "D",
+      "label": "Gestion des alertes système",
+      "correct": false
+    }
+  ],
+  "explanation": "L'analyse de flux réseau permet de détecter les activités suspectes en temps réel."
+}

@@ -1,0 +1,12 @@
+{
+  "type": "analyze",
+  "scenario": "Identifiez le type de mise à jour directe utilisée dans la commande suivante : `sudo apt-get update -f`",
+  "context": {
+    "fakeOutput": "Mise à jour des packages : 2 minutes et 30 secondes\nUtilisation de `apt-get update -f` pour améliorer la performance"
+  },
+  "accept": [
+    "^-f$"
+  ],
+  "hint": "Recherchez le mot clé indiquant la mise à jour directe",
+  "explanation": "L'utilisation de `-f` signifie « force » et permet d'éviter les traductions inutiles, améliorant ainsi la performance du système."
+}

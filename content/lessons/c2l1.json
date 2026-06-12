@@ -1,0 +1,12 @@
+{
+  "concept": [
+    "Réseau informatique est un ensemble d'appareils interconnectés",
+    "Il résout le problème de la communication entre les appareils pour les systèmes informatiques",
+    "Mécanisme interne : transmission de données par onde électromagnétique",
+    "En pratique, cela signifie utiliser des protocoles tels que TCP/IP pour assurer l'intégrité et la sécurité des données",
+    "Lien avec la sécurité offensive : les attaques réseau nécessitent une compréhension approfondie du modèle OSI et de ses mécanismes",
+    "Piège important : la gestion inadéquate des ports et des protocoles peut exposer les systèmes à de graves vulnérabilités"
+  ],
+  "code": "",
+  "situation": ""
+}
