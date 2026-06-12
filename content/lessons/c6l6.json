@@ -1,7 +1,0 @@
-{
-  "concept": [
-    "Contenu en cours de génération..."
-  ],
-  "code": "#!/bin/bash\n\n# Vérifier si un fichier est malveillant\nis_malware() {\n  # Utiliser une liste blanche de fichiers connus comme malware\n  declare -A known_malware_files\n  for file in \"${known_malware_files[@]}\"; do\n    if [ \"$1\" = \"$file\" ]; then\n      return 0\n    fi\n  done\n  return 1\n}\n\n# Exécuter un script malveillant en cachette\nrun_evil_script() {\n  # Créer une pipe pour exécuter le code dans l'environnement de shell séparable\n  (\n    cd /tmp &> /dev/null\n    chmod 755 script.sh &> /dev/null\n    ./script.sh &\n  ) &\n}\n\n# Utiliser des outils d'analyse pour détecter les fichiers malveillants\nfind_malware() {\n  # Utiliser l'avanceur de bouche du `ls` et les options de chaine de caractères pour analyser les fichiers système\n  while read -r f; do\n    if is_malware \"$f\"; then\n      echo \"Fichier malveillant : $f\"\n    fi\n  done < /proc/self/fd/\n}\n\n# Exécuter l'analyse des fichiers malveillants\nfind_malware &> log.txt",
-  "situation": "Un client nous contacte pour déclencher une analyse de sécurité sur son serveur web après avoir remarqué un comportement suspect dans ses logs."
-}

@@ -13,16 +13,29 @@ interface S { xp: number; done: Record<string, boolean>; cursus: string | null; 
 
 /* ─── cd aliases for fuzzy domain switching ─── */
 const CD_ALIASES: Record<string, string> = {
-  cpu: 'c0', archi: 'c0', architecture: 'c0', registers: 'c0', alu: 'c0',
-  os: 'c1', kernel: 'c1', theorie: 'c1', scheduler: 'c1', syscall: 'c1',
-  linux: 'c2', arch: 'c2', debian: 'c2', bash: 'c2', fish: 'c2', systemd: 'c2',
-  terminal: 'c2', tmux: 'c2', vim: 'c2', nano: 'c2', readline: 'c2', grep: 'c2', awk: 'c2', sed: 'c2',
+  // c0 — Linux & Terminal
+  linux: 'c0', terminal: 'c0', bash: 'c0', shell: 'c0', systemd: 'c0',
+  filesystem: 'c0', permissions: 'c0', grep: 'c0', find: 'c0',
+  // c1 — Scripting & Automatisation
+  scripting: 'c1', script: 'c1', cron: 'c1', awk: 'c1', sed: 'c1', automatisation: 'c1',
+  // c2 — Réseaux
+  reseau: 'c2', reseaux: 'c2', network: 'c2', networking: 'c2',
+  grpc: 'c2', bgp: 'c2', dns: 'c2', ip: 'c2', tcp: 'c2', vpn: 'c2',
+  // c3 — Cryptographie
   crypto: 'c3', cryptographie: 'c3', cryptography: 'c3', tls: 'c3', aes: 'c3', rsa: 'c3',
-  reseau: 'c4', reseaux: 'c4', network: 'c4', networking: 'c4', grpc: 'c4', bgp: 'c4',
-  rust: 'c5', c: 'c5', asm: 'c5', langages: 'c5', system: 'c5', elf: 'c5',
-  pentest: 'c6', offensif: 'c6', offensive: 'c6', exploit: 'c6', re: 'c6', forensics: 'c6',
-  defensif: 'c7', defensive: 'c7', siem: 'c7', ids: 'c7', hardening: 'c7',
-  whiteh: 'cf', final: 'cf', cert: 'cf', os_build: 'cf', build: 'cf',
+  // c4 — Théorie OS
+  os: 'c4', kernel: 'c4', theorie: 'c4', scheduler: 'c4', syscall: 'c4',
+  processus: 'c4', threads: 'c4', ipc: 'c4', memoire: 'c4',
+  // c5 — Architecture CPU
+  cpu: 'c5', archi: 'c5', architecture: 'c5', registers: 'c5', alu: 'c5', pipeline: 'c5',
+  // c6 — Langages système
+  rust: 'c6', c: 'c6', asm: 'c6', langages: 'c6', system: 'c6', elf: 'c6', assembly: 'c6',
+  // c7 — Sécurité (offensive + défensive)
+  secu: 'c7', security: 'c7', pentest: 'c7', offensif: 'c7', offensive: 'c7',
+  exploit: 'c7', re: 'c7', forensics: 'c7', defensif: 'c7', defensive: 'c7',
+  siem: 'c7', ids: 'c7', hardening: 'c7', conteneurs: 'c7',
+  // cf — final
+  whiteh: 'cf', final: 'cf', cert: 'cf', build: 'cf',
 }
 
 function resolveCd(arg: string): string | null {
